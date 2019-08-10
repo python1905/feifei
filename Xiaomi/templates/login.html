@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!-- saved from url=(0271)https://account.xiaomi.com/pass/serviceLogin?sid=miotstore&_bannerBiz=miotstore&callback=https%3A%2F%2Fshopapi.io.mi.com%2Fapp%2Fshop%2Fauth%3Flogid%3D1565397946.73854365%26sign%3Db5353420a9974156016281cb5793f8f8%26followup%3Dhttps%253A%252F%252Fwww.xiaomiyoupin.com%252F -->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="小米帐号能使用小米手机，MIUI，小米云，多看阅读，米聊，小米社区等小米服务。">
+  <meta name="keywords" content="小米帐号，小米账号，小米注册，注册，Mi Account，Sign in，小米，帐号，账号，小米帐户，登录，登陆，安全令牌，动态口令，小米注册，找回密码">
+
+
+  <!-- login2step已下线 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var LANG=(function(){
+    var locale=("zh_CN").toLowerCase();
+    if(locale){
+      if(locale.indexOf("en")>-1){
+        return {data:"en",cls:"en"};
+      }else if(locale.indexOf("zh")>-1){
+        if(locale.indexOf("cn")===-1){
+          return {data:"tw",cls:"zh_TW"};
+        }else{
+          return {data:"cn",cls:"zh_CN"};
+        }
+      }
+    }
+    return {data:"en",cls:"en"};
+})();
+</script>
+
+
+<!-- <script src="https://browser.sentry-cdn.com/4.6.4/bundle.min.js" crossorigin="anonymous"></script>
+<script>
+  Sentry.init({
+    dsn: 'https://328aafa16cc24ce6a8cdb3f5c00419e4@sentry.micloud.d.xiaomi.net/26'
+  });
+</script> -->
+
+<script src="./小米帐号 - 登录_files/v.js.下载"></script>
+
+
+<script>
+var _d_={};
+/*fix ie下部分用户保护模式白屏：icacls %userprofile%\Appdata\LocalLow /t /setintegritylevel (OI)(CI)H*/
+try{
+  var supportLocalstorage=!!window.localStorage
+}catch(e){
+  var supportLocalstorage=false;
+}
+var _t_={
+  statURL:'https://data.mistat.xiaomi.com/mistats',
+  appId:"2882303761517246742",
+  appKey:"5621724658742",
+  jspcomplete:(new Date()).getTime(),
+  supportLocalstorage:supportLocalstorage,
+  samplingBase:100,
+  samplingRate:5
+};
+if(window.performance){
+  var timing=performance.timing;
+  if(!timing.responseEnd){
+    timing.responseEnd=timing.responseStart;
+  }
+  _d_.startTS=timing.fetchStart
+  _d_.endTS=timing.responseEnd;
+}else{
+  _d_.startTS=_d_.endTS=(new Date()).getTime();
+}
+var JSP_VAR={
+  deviceType:'PC',
+  dataCenter:'c4',
+  dataCenterZone:'China',
+  locale:'zh_CN',
+  region:'CN',
+  callback:"https://shopapi.io.mi.com/app/shop/auth?logid=1565397946.73854365&sign=b5353420a9974156016281cb5793f8f8&followup=https%3A%2F%2Fwww.xiaomiyoupin.com%2F",
+  sid:'miotstore',
+  qs:"%3Fsid%3Dmiotstore%26_bannerBiz%3Dmiotstore%26callback%3Dhttps%253A%252F%252Fshopapi.io.mi.com%252Fapp%252Fshop%252Fauth%253Flogid%253D1565397946.73854365%2526sign%253Db5353420a9974156016281cb5793f8f8%2526followup%253Dhttps%25253A%25252F%25252Fwww.xiaomiyoupin.com%25252F",
+  hidden:'',
+  "_sign":"aMy4Z58s4N78GNY5MeQxWfMtBQI=",
+  serviceParam :'{"checkSafePhone":false}',
+  privacyLink:'https://www.mi.com/about/privacy/',
+  agreeLink:'https://static.account.xiaomi.com/html/agreement/account/cn.html',
+  showActiveXControl:false,
+  loginMethods:["PWD","TICKET"],
+  theme:'',
+  bizDeviceType:'',
+  useManMachine:'true'
+};
+var PAGE_VAR={
+  form_cache:false,
+  cache_key:(JSP_VAR.deviceType!=="mobile" ? "/static/res/365a934/account-static/html/login/dist/v2/login-cn.html" : "/static/res/365a934/account-static/html/login/dist/v2/login-wap-cn.html")
+};
+
+var localStorageKey='id.mi.com.login.'+( PAGE_VAR.cache_key.substring( PAGE_VAR.cache_key.indexOf("/account-static") ) || "main" );
+var scopes='';
+if(location.search.indexOf("_debugMode")>-1&&supportLocalstorage){
+  window.localStorage && window.localStorage.removeItem(localStorageKey);
+}
+
+(function(){
+
+  function getLocal(url){
+    if(supportLocalstorage){
+      var data=""+localStorage.getItem(localStorageKey);
+      var index=data.indexOf("@")
+
+      if(data.substring(0,index) == url){
+        return data.substring(index+1)
+      }
+    }
+    return null;
+  }
+  function setLocal(url,data){
+    if(supportLocalstorage && data){
+      try{
+        localStorage.setItem(localStorageKey,url+"@"+data);
+      }catch(e){}
+    }
+  }
+  function getContent(url){
+    var xhr= new (window.XMLHttpRequest || window.ActiveXObject)("Microsoft.XMLHTTP");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+          setLocal(url,xhr.responseText);
+          _t_.htmlGetEnd=(new Date()).getTime();
+          document.write(xhr.responseText);
+          document.close();
+      }
+    };
+    xhr.open("GET",url,false);
+    xhr.send();
+  }
+  var cache_key=PAGE_VAR.cache_key;
+      _t_.version=cache_key;
+  var html=getLocal(cache_key);
+  if(html){
+    _t_.htmlCache=true;
+    PAGE_VAR.form_cache=true;
+    document.write(html);
+    document.close();
+  }else{
+    _t_.htmlCache=false;
+    _t_.htmlGetStart=(new Date()).getTime();
+    getContent(cache_key);
+  }
+})();
+</script>
+
+
+
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>小米帐号 - 登录</title>
+<script src="./小米帐号 - 登录_files/config"></script><script src="./小米帐号 - 登录_files/m.js.下载"></script><style type="text/css">.miverify_wind {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "PingFangSC-Regular", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-size: 16px;
+  display: none;
+  opacity: 0;
+  position: fixed;
+  z-index: 1147483647;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s; }
+  .miverify_wind * {
+    font-family: "PingFangSC-Regular", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif; }
+  .miverify_wind a {
+    color: #999;
+    text-decoration: none; }
+    .miverify_wind a:hover, .miverify_wind a:focus, .miverify_wind a:visited {
+      color: #333;
+      text-decoration: none; }
+    .miverify_wind a:focus {
+      outline: 0 none; }
+  .miverify_wind input::-moz-placeholder,
+  .miverify_wind ::-webkit-input-placeholder,
+  .miverify_wind input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal; }
+  .miverify_wind .miverify_panel_ghost {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    background-color: #000; }
+  .miverify_wind .miverify_panel_box {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-box-shadow: 0 1px 8px rgba(128, 128, 128, 0.3);
+            box-shadow: 0 1px 8px rgba(128, 128, 128, 0.3);
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: #fff;
+    -webkit-transition: width .5s ease,height .5s ease;
+    transition: width .5s ease,height .5s ease;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 300px; }
+    .miverify_wind .miverify_panel_box.miverify_panel_show_captcha .miverify_captcha_content {
+      margin: 20px auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .miverify_wind .miverify_panel_box.miverify_panel_show_captcha .miverify_panel_success,
+    .miverify_wind .miverify_panel_box.miverify_panel_show_captcha .miverify_panel_loading,
+    .miverify_wind .miverify_panel_box.miverify_panel_show_captcha .miverify_panel_error {
+      display: none; }
+    .miverify_wind .miverify_panel_box.miverify_panel_show_captcha .miverify_panel_next {
+      display: block; }
+    .miverify_wind .miverify_panel_box.loading .miverify_panel_success,
+    .miverify_wind .miverify_panel_box.loading .miverify_panel_next,
+    .miverify_wind .miverify_panel_box.loading .miverify_panel_error {
+      display: none; }
+    .miverify_wind .miverify_panel_box.loading .miverify_panel_loading {
+      display: inline-block; }
+    .miverify_wind .miverify_panel_box.success .miverify_panel_loading,
+    .miverify_wind .miverify_panel_box.success .miverify_panel_next,
+    .miverify_wind .miverify_panel_box.success .miverify_panel_error {
+      display: none; }
+    .miverify_wind .miverify_panel_box.success .miverify_panel_success {
+      display: block; }
+    .miverify_wind .miverify_panel_box.error .miverify_panel_success,
+    .miverify_wind .miverify_panel_box.error .miverify_panel_next,
+    .miverify_wind .miverify_panel_box.error .miverify_panel_loading {
+      display: none; }
+    .miverify_wind .miverify_panel_box.error .miverify_panel_error {
+      display: block; }
+
+.miverify_panel_error {
+  display: none;
+  width: 100%;
+  padding: 20px 0 0 0;
+  height: 150px;
+  position: relative; }
+  .miverify_panel_error .miverify_error_footer_panel {
+    display: none; }
+  .miverify_panel_error .miverify_error_refresh_type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .miverify_panel_error .miverify_error_refresh_type .miverify_cancel_btn {
+      display: block; }
+  .miverify_panel_error .miverify_panel_error_title {
+    margin: 10px 0 0 0;
+    color: #000; }
+  .miverify_panel_error .miverify_panel_error_content {
+    margin: 30px 0;
+    cursor: pointer;
+    color: #666; }
+
+.miverify_panel_loading_title,
+.miverify_panel_loading_content,
+.miverify_panel_success_title,
+.miverify_panel_error_title,
+.miverify_panel_error_content {
+  text-align: center;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px; }
+
+.miverify_ok_btn,
+.miverify_cancel_btn {
+  background-color: #fff;
+  color: #33ADFF;
+  -webkit-appearance: none;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0 none;
+  -webkit-transition: .1s;
+  transition: .1s;
+  font-weight: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 17px 20px;
+  font-size: 16px;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid #dcdfe6;
+  border-bottom: 0 none;
+  border-right: 0 none;
+  border-left: 0 none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.miverify_cancel_btn {
+  color: #999;
+  border-right: 1px solid #dcdfe6;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: none; }
+
+.miverify_panel_show_captcha {
+  text-align: center; }
+  .miverify_panel_show_captcha .miverify_window {
+    height: 260px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .miverify_panel_show_captcha .miverify_captcha_title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 0; }
+  .miverify_panel_show_captcha .miverify_content {
+    padding: 0 20px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .miverify_panel_show_captcha .miverify_footer_panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .miverify_panel_show_captcha .miverify_refresh_link {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #0099FF;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: right; }
+    .miverify_panel_show_captcha .miverify_refresh_link:hover, .miverify_panel_show_captcha .miverify_refresh_link:visited, .miverify_panel_show_captcha .miverify_refresh_link:active, .miverify_panel_show_captcha .miverify_refresh_link:focus {
+      color: #0099FF; }
+  .miverify_panel_show_captcha .miverify_err_tip {
+    font-size: 14px;
+    color: #f66;
+    margin: 10px 0;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; }
+  .miverify_panel_show_captcha .miverify_captcha_input {
+    -webkit-appearance: none;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #606266;
+    display: block;
+    outline: none;
+    padding: 10px 0 10px 15px;
+    width: 100%;
+    font-size: 14px; }
+  .miverify_panel_show_captcha img {
+    display: block;
+    float: left;
+    cursor: pointer; }
+
+.miverify_flat.miverify_wind .miverify_panel_box {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 0 none !important;
+  width: 100% !important;
+  min-width: 270px; }
+
+.miverify_flat.miverify_wind .miverify_panel_ghost {
+  background-color: #fff !important; }
+
+.miverify_panel_loading {
+  display: none;
+  margin: 20px auto;
+  vertical-align: middle; }
+  .miverify_panel_loading .miverify_panel_loading_content {
+    color: #000;
+    margin-left: 10px; }
+  .miverify_panel_loading .miverify_panel_loading_icon {
+    float: left;
+    width: 20px;
+    height: 20px;
+    -webkit-animation: rotate-loading 1.2s linear infinite;
+            animation: rotate-loading 1.2s linear infinite;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDMzIxQzg5RDJDQjUxMUU4OThGNkYxQkI2ODBGQTlERCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDMzIxQzg5RTJDQjUxMUU4OThGNkYxQkI2ODBGQTlERCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkMzMjFDODlCMkNCNTExRTg5OEY2RjFCQjY4MEZBOUREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkMzMjFDODlDMkNCNTExRTg5OEY2RjFCQjY4MEZBOUREIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+uWjUJwAAAZVJREFUeNqk1MsrRGEYx/Ezx2UyDLZiSrmEhVuUW1aywIYs2Cj/jJ2NpYWysLBgZSuK7ORWRJNbNiLMjMtIjO9TPzUxcpx56tOcOXPOb95z3ud9A07mKkArGlGOMFKI4QqrOM10Y26Gcx0YRqVCHpBAAGVo1vHsX4F20RiG8IEtOcOTrilGBc71vURPcJgpfByLmEGb461sAEsY+DqRo892TOAG0zjyGJhEi17DMW5dTcCo3tc8LhzvFcUCghiB6+ofbAK25b+1gQM0oM4Cm/TDpuOvUpq8fMtyNUuxtJnzU1F1QsRV0ybSWsNP2f3PluVqyAEn+7KMlAXGNcpwFmHW4IWWZYGXOlGdRWAtQtZyFriDd/T4DLPF0Y0X7FrgPk7U7b0+AvtQr5xojjaCO+0y9dqWbjyG2aKYxKt2n/uvtXyNN3SpL9c1+79VHvoVFtSS3fm+fa1osSc1amuDKh0/6JpS1KBTT2P9N4e19N75rSKY0vGjrg1pM0lq/S5rlTheAu3GQY2ySK8grjbb03b1oz4FGABfpltgDckVGAAAAABJRU5ErkJggg==); }
+
+@-webkit-keyframes rotate-loading {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes rotate-loading {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+</style><script charset="utf-8" src="./小米帐号 - 登录_files/a.js.下载"></script></head>
+
+<body class="zh_CN">
+  <div class="wrapper">
+    <!-- loading -->
+    <div class="popup_mask acquirePhoneMask" style="display:none;" id="loadingMask">
+      <div class="bkc"></div>
+      <div class="mod_wrap loadingmask">
+      </div>
+      <div class="loadingTips">正在检测你的帐号信息...</div>
+    </div>
+    <!--bg_banner_start-->
+    <div class="bgiframe">
+      <iframe name="ifr" style="height:100%" width="100%" height="686" src="./小米帐号 - 登录_files/saved_resource.html" id="bgiframe" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <!--bg_banner_end-->
+    <div class="wrap">
+      <div class="layout_panel">
+        <div class="layout" id="layout">
+          <!--表单输入登录-->
+          <div class="mainbox form-panel" id="login-main" style="display: block;">
+            <div id="custom_display_2"><a class="ercode" id="qrcode-trigger" href="javascript:void(0)"></a></div>
+            <!-- header s -->
+            <div class="lgnheader">
+              <div class="header_tit t_c">
+                <em id="custom_display_1" class="milogo">
+                  <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" rx="3" ry="3" style="fill:#ff6700"></rect><rect x="10" y="15" width="4.2" height="18" style="fill:#FFFFFF"></rect><rect x="33.75" y="15" width="4.2" height="18" style="fill:#FFFFFF"></rect><rect x="11.25" y="15" width="15" height="4.1" style="fill:#FFFFFF"></rect><rect x="26.2" y="20.55" width="4.2" height="12.5" style="fill:#FFFFFF"></rect><rect x="20.6" y="15" width="9.8" height="9.8" rx="4.4" ry="4.4" style="fill:#FFFFFF"></rect><rect x="20.2" y="19" width="6" height="6" rx="2" ry="2" style="fill:#ff6700"></rect><rect x="18" y="19.1" width="4" height="2.2" style="fill:#ff6700"></rect><rect x="24.2" y="23" width="1.94" height="10" style="fill:#ff6700"></rect><rect x="18.1" y="22.8" width="4.2" height="10.2" style="fill:#FFFFFF"></rect></svg>
+                </em>
+                <h4 class="header_tit_txt" id="login-title">小米帐号登录</h4>
+              <div class="site_info"></div></div>
+            </div>
+            <!-- header e -->
+            <!-- tab s -->
+            <div class="nav_tabs_panel">
+              <div id="nav-tabs" class="nav_tabs">
+                <a class="navtab-link now" href="javascript:void(0);" data-tab="pwd">帐号登录</a><span class="line"></span>
+                <a class="navtab-link" href="javascript:void(0);" data-tab="qr">扫码登录</a>
+              </div>
+            </div>
+            <!-- tab e -->
+            <!-- tab con s -->
+            <div class="tabs-con tabs_con now" data-con="pwd">
+              <div>
+                <div class="login_area">
+                  <form action="https://account.xiaomi.com/pass/serviceLoginAuth2" method="POST" id="login-main-form">
+                    <div class="loginbox c_b">
+                      <!-- 输入框 -->
+                      <div class="lgn_inputbg c_b login-panel pwdLogin">
+                        <!--验证用户名-->
+                        <div class="single_imgarea" id="account-info">
+                          <div class="na-img-area" id="account-avator" style="display:none">
+                            <div class="na-img-bg-area" id="account-avator-con"></div>
+                          </div>
+                          <p class="us_name tac" id="account-displayname"></p>
+                          <p class="us_id tac"></p>
+                        </div>
+                        <label id="region-code" class="labelbox login_user c_b" for="">
+                          <div class="turn_area"><a class="btn_turn" id="manual_code" href="javascript:void(0);" title="关闭国家码"></a></div>
+                          <div class="country_list">
+                            <div class="animation countrycode_selector" id="countrycode_selector">
+                              <span class="country_code"><tt class="countrycode-value" id="countrycode_value"></tt><i class="icon_arrow_down"></i></span>
+                            </div>
+                          </div>
+                          <input class="item_account" autocomplete="off" type="text" name="user" id="username" placeholder="邮箱/手机号码/小米ID">
+                          <div id="btn-clear-link" class="clear_link_panel">
+                            <span class="clear_link"></span>
+                          </div>
+                        </label>
+                        <div class="country-container" id="countrycode_container" style="display: none;">
+                          <div class="country_container_con" id="countrycode_container_con"></div>
+                        </div>
+                        <label class="labelbox pwd_panel c_b">
+                          <input class="item_account" type="password" placeholder="密码" autocomplete="off" id="pwd" name="password">
+                          <input class="item_account" type="text" placeholder="密码" autocomplete="off" id="visiablePwd" name="visiablepwd" style="display:none">
+                          <div class="eye_panel pwd-visiable">
+                            <i class="eye pwd-eye">
+                              <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path class="eye_outer" d="M0 8 C6 0,14 0,20 8, 14 16,6 16, 0 8 z"></path>
+                                <circle class="eye_inner" cx="10" cy="8" r="3"></circle>
+                              </svg>
+                              </i>
+                          </div>
+                          <div id="sms-code-panel" class="code_panel">
+                            <a class="send_ticket" href="javascript:;" id="getSMSCode">获取验证码</a>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="security_Controller" style="display: none;">
+                        <label class="checkbox_area">
+                          <input type="checkbox" id="trustSecurityController" class="checkbox">使用安全控件</label>
+                      </div>
+                      <div id="captcha"></div>
+                      <!-- 错误信息 -->
+                      <div class="err_tip">
+                        <div><em class="icon_error"></em><span class="error-con"></span></div>
+                      </div>
+                      <div class="btns_bg">
+                        <input class="btnadpt" id="login-button" type="submit" value="登录">
+                        <span id="custom_display_8" class="sns-default-container sns_default_container" style="display: none;">
+                          </span>
+                      </div>
+                      <div class="other_panel clearfix">
+                        <span id="custom_display_256" class="sms_link">
+                            <a href="javascript:;" class="btnadpt btn_gray login_type_link" id="ChangeLoginType">手机短信登录/注册</a>
+                          </span>
+                        <div class="reverse">
+                          <div class="n_links_area" id="custom_display_64">
+                            <a class="outer-link" href="https://account.xiaomi.com/pass/register?sid=miotstore&amp;_bannerBiz=miotstore&amp;callback=https%3A%2F%2Fshopapi.io.mi.com%2Fapp%2Fshop%2Fauth%3Flogid%3D1565397946.73854365%26sign%3Db5353420a9974156016281cb5793f8f8%26followup%3Dhttps%253A%252F%252Fwww.xiaomiyoupin.com%252F">立即注册</a><span>|</span>
+                            <a class="outer-link" href="https://account.xiaomi.com/pass/forgetPassword?sid=miotstore&amp;_bannerBiz=miotstore&amp;callback=https%3A%2F%2Fshopapi.io.mi.com%2Fapp%2Fshop%2Fauth%3Flogid%3D1565397946.73854365%26sign%3Db5353420a9974156016281cb5793f8f8%26followup%3Dhttps%253A%252F%252Fwww.xiaomiyoupin.com%252F">忘记密码？</a>
+                          </div>
+                        </div>
+                        <!-- 其他登录方式 s -->
+                        <div style="display: block;" class="other_login_type sns-login-container" id="custom_display_16">
+                          <fieldset class="oth_type_tit">
+                            <legend align="center" class="oth_type_txt">其他方式登录</legend>
+                          </fieldset>
+                          <div id="sns-login-links" class="oth_type_links"><a class="icon_type btn_qq sns-login-link" data-type="qq" href="https://account.xiaomi.com/pass/sns/login/auth?appid=100284651&amp;&amp;callback=https%3A%2F%2Fshopapi.io.mi.com%2Fapp%2Fshop%2Fauth%3Flogid%3D1565397946.73854365%26sign%3Db5353420a9974156016281cb5793f8f8%26followup%3Dhttps%253A%252F%252Fwww.xiaomiyoupin.com%252F&amp;sid=miotstore" title="QQ登录" target="_blank"><i class="btn_sns_icontype icon_default_qq"></i></a><a class="icon_type btn_weibo sns-login-link" data-type="weibo" href="https://account.xiaomi.com/pass/sns/login/auth?appid=2996826273&amp;&amp;callback=https%3A%2F%2Fshopapi.io.mi.com%2Fapp%2Fshop%2Fauth%3Flogid%3D1565397946.73854365%26sign%3Db5353420a9974156016281cb5793f8f8%26followup%3Dhttps%253A%252F%252Fwww.xiaomiyoupin.com%252F&amp;sid=miotstore" title="微博登录" target="_blank"><i class="btn_sns_icontype icon_default_weibo"></i></a><a class="icon_type btn_alipay sns-login-link" data-type="alipay" href="https://account.xiaomi.com/pass/sns/login/auth?appid=2088011127562160&amp;&amp;callback=https%3A%2F%2Fshopapi.io.mi.com%2Fapp%2Fshop%2Fauth%3Flogid%3D1565397946.73854365%26sign%3Db5353420a9974156016281cb5793f8f8%26followup%3Dhttps%253A%252F%252Fwww.xiaomiyoupin.com%252F&amp;sid=miotstore" title="支付宝登录" target="_blank"><i class="btn_sns_icontype icon_default_alipay"></i></a><a class="icon_type btn_weixin sns-login-link" data-type="weixin" href="https://account.xiaomi.com/pass/sns/login/auth?appid=wxxmzh&amp;scope=snsapi_login&amp;callback=https%3A%2F%2Fshopapi.io.mi.com%2Fapp%2Fshop%2Fauth%3Flogid%3D1565397946.73854365%26sign%3Db5353420a9974156016281cb5793f8f8%26followup%3Dhttps%253A%252F%252Fwww.xiaomiyoupin.com%252F&amp;sid=miotstore" title="微信登录" target="_blank"><i class="btn_sns_icontype icon_default_weixin"></i></a></div>
+                        </div>
+                        <!-- 其他登录方式 e -->
+                        <p class="acq_tips" style="display: none;"></p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-con tabs_con" data-con="qr">
+            </div>
+            <!-- tab con e -->
+          </div>
+          <div class="ercode_area" id="login-qrcode" style="height: 620px; width: 854px; display: none;">
+            <div class="ercode_pannel">
+              <a class="code_close" href="javascript:void(0)" title="关闭" id="qrcode-close"><span class="icon_code_close"></span></a>
+              <div class="ercode_box">
+                <div class="code_hd">
+                  <h3 class="code_tit">小米帐号扫码登录</h3>
+                  <p>请打开「设置 &gt; 小米帐号 &gt; 右上角扫一扫」扫码登录</p>
+                </div>
+                <div class="code_iframe">
+                  <iframe style="background:#fff;" src="./小米帐号 - 登录_files/saved_resource(1).html" id="qriframe" frameborder="0" scrolling="no" sandbox="allow-scripts allow-same-origin allow-top-navigation allow-modals" height="270" width="270"></iframe>
+                </div>
+                <div class="custom_sub_txt">
+                  <p id="custom-qr-name"></p>
+                  <p>小米手机可打开「设置」&gt;「小米帐号」扫码登录</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 取号注册 -->
+          <div id="ac-register" class="tac mode_panel form-panel" style="display: none">
+            <h1>注册小米帐号</h1>
+            <div class="box">
+              <img src="./小米帐号 - 登录_files/sim.png" alt="sim card" width="70" height="70">
+              <p>手机号：<span class="maskedPhone"></span></p>
+            </div>
+            <div class="err_tip">
+              <div class="dis_box"><em class="icon_error"></em><span class="error-con"></span></div>
+            </div>
+            <div class="fixed_bot dis_box">
+              <a href="javascript:;" class="btnadpt plain ok_btn">一键注册</a>
+              <a href="javascript:;" class="btnadpt plain no_btn btn_gray">登录其他帐号</a>
+            </div>
+            <p class="acq_tips" style="display: none">取号来源于中国移动</p>
+            <p class="agreeTip"><i class="icon_select icon_true"></i>同意小米的 <a href="https://static.account.xiaomi.com/html/agreement/account/cn.html" class="agreement_link">用户协议</a>和<a href="https://www.mi.com/about/privacy/" class="privacy_link"> 隐私政策 </a></p>
+          </div>
+          <!-- 回收号确认 -->
+          <div id="ac-confirm" class="tac mode_panel form-panel" style="display: none">
+            <div>
+              <div class="box">
+                <div class="na-img-area">
+                  <div class="na-img-bg-area us-portraitUrl"></div>
+                </div>
+                <div class="confirm_tips">
+                  <p class="us_name us-userName">昵称：<span class="usernameShow"></span></p>
+                  <p>小米ID：<span class="useridShow"></span></p>
+                  <!-- <p>注册时间：<span class="userRegisterDateShow"></span></p>
+                    <p>注册设备：<span class="userRegisterDeviceShow"></span></p>
+                    <p>注册来源：<span class="userRegisterOriginShow"></span></p>
+                    <p>手机号：<span class="userPhoneShow"></span></p> -->
+                </div>
+              </div>
+              <h2>这是你的帐号吗？</h2>
+              <div class="recycle">
+                <p><span class="user-phone"></span>疑似是运营商回收后再次售卖的号码，该号码下已有小米帐号，这个帐号是你的吗？</p>
+                <p class="color_warning">如果使用非本人注册的帐号，部分功能可能会受限制。</p>
+              </div>
+            </div>
+            <div class="err_tip">
+              <div class="dis_box"><em class="icon_error"></em><span class="error-con"></span></div>
+            </div>
+            <div class="fixed_bot">
+              <a href="javascript:;" class="btnadpt plain ok_btn">继续登录</a>
+              <a href="javascript:;" class="btnadpt plain no_btn">注册新帐号</a>
+            </div>
+            <p class="acq_tips" style="display: none">取号来源于中国移动</p>
+            <p class="ptb30 btn_alink_box">
+              <a href="javascript:;" class="back_btn blue">登录其他帐号</a>
+            </p>
+          </div>
+          <div id="set-pwd" class="mode_panel set_pwd_panel form-panel">
+            <h4>请设置您的密码：</h4>
+            <label class="labelbox c_b">
+              <input class="item_account set-password re-password" type="password" name="password" placeholder="请输入密码">
+            </label>
+            <label class="labelbox c_b">
+              <input class="item_account set-password" name="repassword" type="password" placeholder="请输入确认密码">
+            </label>
+            <div class="err_tip pwd_tip">
+              <div class="dis_box"><em class="icon_error"></em><span class="error-con" data-origin="密码长度8~16位，数字、字母、字符至少包含两种">密码长度8~16位，数字、字母、字符至少包含两种</span></div>
+            </div>
+            <div class="btns_bg">
+              <a id="register-button" class="btnadpt">立即注册</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="custom_display_4" class="n-footer">
+    <div class="nf-link-area clearfix">
+      <ul class="lang-select-list">
+        <li><a href="javascript:void(0)" data-lang="zh_CN" class="lang-select-li current">简体</a>|</li>
+        <li><a href="https://account.xiaomi.com/pass/serviceLogin?sid=miotstore&amp;_bannerBiz=miotstore&amp;callback=https%3A%2F%2Fshopapi.io.mi.com%2Fapp%2Fshop%2Fauth%3Flogid%3D1565397946.73854365%26sign%3Db5353420a9974156016281cb5793f8f8%26followup%3Dhttps%253A%252F%252Fwww.xiaomiyoupin.com%252F&amp;_locale=zh_TW" data-lang="zh_TW" class="lang-select-li">繁体</a>|</li>
+        <li><a href="https://account.xiaomi.com/pass/serviceLogin?sid=miotstore&amp;_bannerBiz=miotstore&amp;callback=https%3A%2F%2Fshopapi.io.mi.com%2Fapp%2Fshop%2Fauth%3Flogid%3D1565397946.73854365%26sign%3Db5353420a9974156016281cb5793f8f8%26followup%3Dhttps%253A%252F%252Fwww.xiaomiyoupin.com%252F&amp;_locale=en" data-lang="en" class="lang-select-li">English</a>|</li>
+        <li><a href="https://static.account.xiaomi.com/html/faq/faqList.html" target="_blank">常见问题</a>|</li>
+        <li><a id="msg-privacy" href="https://www.mi.com/about/privacy/" target="_blank">隐私政策</a></li>
+      </ul>
+    </div>
+    <p class="nf-intro">小米公司版权所有-京ICP备10046444-<a class="beian-record-link" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134"><span><img src="./小米帐号 - 登录_files/ghs.png"></span>京公网安备11010802020134号</a>-京ICP证110507号</p>
+  </div>
+
+
+
+<style>
+﻿html,body,h1,h2,h3,h4,h5,h6,blockquote,p,pre,dl,dd,ol,ul,li,a,span,caption,th,td,form,fieldset,legend,input,button,textarea,address{margin:0;padding:0}*{padding:0;margin:0}h1,h2,h3,h4,h5,h6{font-size:100%}ol,ul{list-style:none}li{list-style:none}fieldset,img{border:0}address,cite,dfn,em,var{font-style:normal}code,kbd,pre,samp{font-family:courier new,courier,monospace}input,button,textarea,select{font-size:100%}input,button,select,textarea{outline:0}textarea{resize:none}table{border-collapse:collapse;border-spacing:0;empty-cells:show;font-size:inherit}abbr[title]{border-bottom:1px dotted;cursor:help}a,a:hover{text-decoration:none}a,label,:focus{outline:0 none}a,img,input{border:0 none}s{font-style:normal;text-decoration:none}body{font-size:14px;font-family:arial,"Hiragino Sans GB","Microsoft YaHei","微軟正黑體","儷黑 Pro",sans-serif}button,input,select,textarea{font-family:arial,"Hiragino Sans GB","Microsoft YaHei",sans-serif}input::-moz-placeholder,textarea::-moz-placeholder{color:#3b3b3b;font-weight:normal}::-webkit-input-placeholder{color:#3b3b3b;font-weight:normal}input:-ms-input-placeholder{color:#3b3b3b;font-weight:normal}::-ms-clear{display:none}::-ms-reveal{display:none}.clearfix:after{display:block;content:"\20";height:0;clear:both;overflow:hidden;visibility:hidden}.clearfix{*zoom:1}input::-ms-clear{display:none}input::-ms-reveal{display:none}input:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px white inset}@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none){a{background-color:transparent}}input{background:0;border:0 none}input[type="button"],input[type="submit"],input[type="reset"],a{-webkit-appearance:none;appearance:none}.fl{float:left}.fr{float:right}.nbg{background:none !important}.t_l{text-align:left}.t_c{text-align:center}.t_r{text-align:right}.c_b:before,.c_b:after{content:"";display:block}.c_b:after{clear:both}.c_b{zoom:1}.hidden,.hide{display:none}.hideimportant{display:none !important}.underline{text-decoration:underline}input[type=text]::-ms-clear,input[type=password]::-ms-reveal{display:none}input{color:#333}input:required,input:invalid{-moz-box-shadow:none;box-shadow:none}input::-moz-focus-inner{border:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;-moz-appearance:none;appearance:none;margin:0}input[type="number"]{-moz-appearance:textfield}input{color:#4a4a4a}::-webkit-input-placeholder{color:#9b9b9b}input:-ms-input-placeholder{color:#9b9b9b}html,body{height:100%}body{background:#f5f5f5;color:#757575}a{color:#757575}input{color:#333}::-webkit-input-placeholder{color:#9d9d9d}input:-ms-input-placeholder{color:#9d9d9d}.ercode,.icon_type5,.icon_arrow_down,.icon_error{background:url(https://account.xiaomi.com/static/res/f234829/account-static/respassport/acc-2014/img/sprite_login.gif) no-repeat}.btn_turn,.btn_mod_close,.icon_code_close{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAABGdBTUEAALGPC/xhBQAAAJxJREFUGBl1kLEOgkAQRA9pVUKihTR2FBREPwD/v6ehsDYhoTBWVsAb5AguMMm7I7sz3O0FzrkYOnjDlg409ruxm7MrtKaI4g30w0EyPsAGZCzgBH+ygYUxnNm/fH8gAx2ZQgUNDJqbVVBAxjs84QWT/IC+oKOvUEICdgZKP9k72hm8z1mjbywCRzqrzzMmFFD/HLBcoIUatqR3jnolNxObIsWRIwAAAABJRU5ErkJggg==) no-repeat center center}.icon_select.icon_true{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAk5JREFUOBGVlctrU1EQxn/3tqZVKxQRCirdWRRX4sKuK7j1GYoLN4JYULT6FwiuFSOiEf+A+iq6FwV3uhIXWqmugigVKT5iTUKa6zfn5CQ3MUnTgXPPa+Y7c+bMNzeihyRHGGWAcSJGnFpCkVUK0VN+dDOLOm0kx9lNhhmBTartFODWOuCyAD+rvaJCPprnQ7t9C2ACMdPMCuys2oRmCKxVpERNrcKi2l2Nb0WPNKpLQz3JCiLmHkOcYJhNQaFnX1YIysxzn9MCsmOcD94m5ryAjvUNZlZDim2GrLuVR/GAyVH2uGuawnrFbqMQubjL1qJkJ81occKN1/rEg5Bpi4jZ2iNKYpcagxxIXb475OgOuPIern6UpYCDmFvKCMOKXZ751Ajbvo8GWudbxuDyCxjbBd8+6QmqzX17WsNQzsbybHMjz4LK/izc/AVTF/zKyDaBPReYolJ4A7cPB81mb7kqAqT8bu6xIiJs2AjTOeWhPJ08Bdv3wpd3kDsEf7sSRf7V+EPCcgoOFp7B3Dm/lL0G4/tgaRGuH4Ti9xbVxsQwRM3YuOnoZAxIy8s78PCSVrTx86vApuD3UlqjOTZbT8mCY0pykhvKposK6v+SUWpWS62P0K61qoUVctEcsz4PS+KkcbOTVIq9wczG8zpvQwcYPWHBEb2kc9YrxmcViVB5vIcG8kDXLvNYTS71KeaAFQdVnGDRSBurFkmNM5R4K4X+y5ccCZXGQN2jBPTQu2IxLNBuBbbKa3mWd6EKRvW+I2DQafwCjE0mlrNr/AL+AbcOsj+c24+/AAAAAElFTkSuQmCC)}.icon_select.icon_true.disabled{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBREFGNUQ3MzNENzExMUU4QTE5Njg2OEEyNzZGOTE2RSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBREFGNUQ3NDNENzExMUU4QTE5Njg2OEEyNzZGOTE2RSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkFEQUY1RDcxM0Q3MTExRThBMTk2ODY4QTI3NkY5MTZFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkFEQUY1RDcyM0Q3MTExRThBMTk2ODY4QTI3NkY5MTZFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+qZxlBAAAAnpJREFUeNqcVEuLE0EQrulMHpsHZJPgSIh5YfQiouJJUVQQH3jYuwoevHvxIOhZvOSwoF68+RtUFkUWTx6UXfAggpCAEZIsSQwmJjt5+tWQ1p44E40NNV3TXfX1V91VpU2nUxqPx1QqlWg4HJLP56NAIEDNZnO/EOK8pmkHJpOJATsTehXyNpFIvOn3+98jkQjVajXSdZ2CwSAxlk7KgDENBoPDOOAONtcAtKLuswNLo9Eo4+CH0B9h2VRtbIAAuj4ajdahrjK428BBOTAsIqI1/N6AbUnuCf54PB42ugmwp9hcCKZGA/tTIPEC+r7ZQaRVKhVWTrbb7VcIYYX+YwBwMx6PX4pGo6ZotVo6HuD+MmDyLuUA07P4v+b1egkPKc5BTi8DBntiZwnKVwZSt8rlsk8g3Cv/CsZ3xCmSz+epUCjYQDEOgekRgYWjTo4s82sMkMvlKBwOc5g2G+BoYH6cX3nv/OsZhkG44F8OKlgoFKJer0cIzyoImRFsg0Q3hEwd1TGZTFI2m6VYLGYxcQJDAZBDegkOeef3nyDTNKlarVrG6XTaYpvJZP4AY1s7kqBOp7MjUIMf1BRgIK5PFtZTqRSHshBMKdttgUbwXAWUpzFLFh7dbtdqHm5gs/EZoO91JPZLGG1h4dg8aL1et8D4Gvgu3cCYkN/vfwxyuzqUXSzcRaE/4xydD4MBeXarbwZDYm/hEZ9YlcK9D7IBh3tODszqL82iBrmKdvaDk17IuoTTA5x0G5uDJZrCR8hlqJ/kO9guBZSLYHsR6mtOywVY3wBUBIEzmLddG6xsRQhzE+oJyAUk+0HMe2ad+Sv232HegM0Xp5N+CjAAy/VdPgbPs8EAAAAASUVORK5CYII=)}.icon_select{width:20px;height:20px;margin-top:-4px;margin-right:5px;display:inline-block;vertical-align:middle;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAcxJREFUOBGdVb1qAkEQ9vYwiBcwXiyuiOGKEJLaIoHUh/U9RSxS5Ql8BIsUpsgLHAlCGhEby1xhnZ9CvBDQQs5IvEMQNPMdrviz/twt6O7OzPfN7O7MnBTbMiqVylEikThljB3CbDKZDEej0bdpmr+bYJJIUavVLjKZTCGZTF6nUqmTeDyuwm48HruDweDH9/23Xq9XzufzHyL8XFYsFplt2/etVuuTQFOKaLo6IIMONrC1LOtgTkALmW+gyOVyT5qm3em6rlFUMUlaPwBk0KXT6WNZlm/I4Vk2m31tNBpTzhXM8NbpdP5WI9q1b7fbHrBLZPV6/RJH2AXepAcW9w5Shj8Kv0BHPcc6ygAWjwgsQ2ooinJF6RGFK8AAi4wAF0OeITVED7CvB2DBEeQsgRSeZ/sSiOzAgQII7lBkEFUGQg8VEJWA48CB0mSoTZQTpQTXhZ6BBQe4AnCz2SyhnKIOYMEBsuAOXdd97Ha7X6FDmwGARbNYwqN8UEZho0S5Lpbe/JWr1WqJPD3Tb7jkacvGcRyfgnih+UFoho4Db2HaF1reItl6fyItmoWqqrebGqzneXa/3y8bhvG+SIa1kJAb8U8A7ZWZzNv1CfgHv1r3E9DWv4gAAAAASUVORK5CYII=)}.warning_white{background-image:url(https://account.xiaomi.com/static/res/269877d/account-static/respassport/acc-2014/img/warning2.png);vertical-align:top;margin-right:4px;width:26px;height:26px;display:inline-block}.icon_close{background:url(https://account.xiaomi.com/static/res/269877d/account-static/respassport/acc-2014/img/close2.png);background-position:50% 50%;width:11px;height:11px;display:inline-block}.color_warning{color:red}.wrapper{width:100%;min-height:100%;height:auto;display:-webkit-box;display:box;display:-moz-box;display:-o-box;display:-ms-box;-webkit-box-align:center;-moz-box-align:center;-o-box-align:center;box-align:center;-webkit-box-pack:center;-moz-box-pack:center;-o-box-pack:center;box-pack:center}.wrap{padding-bottom:80px;padding-top:100px \9}@media screen and (min-width:0\0){.wrap{padding-top:100px}}.layout{background-color:#fff;width:854px;margin:0 auto 20px;position:relative;min-height:620px}.captcha_layout{min-height:700px}.ercode{width:68px;height:68px;position:absolute;right:0;top:0;opacity:.3;filter:alpha(opacity=30)}.ercode:hover,.ercode:focus{opacity:1;filter:alpha(opacity=100)}.header_tit{padding:50px 0 22px}.milogo{width:49px;height:48px;margin:0 auto;display:block}.header_tit_txt{font-size:30px;color:#333;font-weight:normal;padding-top:22px}.lgn_inputbg{position:relative}.login_area,.mode_panel{width:358px;margin:0 auto;padding-bottom:20px}.mode_panel{padding-top:60px}.labelbox{display:block;margin-bottom:14px;border:1px solid #e0e0e0}.labelbox input{height:22px;line-height:22px;padding:13px 16px 13px 14px;display:block}.placehld{width:326px;padding:13px 16px 13px 14px}.country_list{cursor:pointer;display:none;float:left}.country_regin{max-width:80px;overflow:hidden;white-space:nowrap;-webkit-text-overflow:ellipsis;-moz-text-overflow:ellipsis;-o-text-overflow:ellipsis;text-overflow:ellipsis}.item_account{float:left;width:326px}.pwd_panel{position:relative}.country_regin{margin-right:8px}.country_code{padding-right:12px;position:relative}.icon_arrow_down{width:8px;height:5px;position:absolute;top:8px;right:0;background-position:-19px -69px}.eye_panel{display:none}.divflex .item_account{width:270px}.turn_area{display:none;height:11px;padding:18px 0 18px 10px;float:left}.btn_turn{width:11px;height:11px;display:block}.clear_link_panel{display:none}.turn_off{display:none}.add_regioncode .item_account{width:236px}.add_regioncode .country_list{height:22px;line-height:22px;padding:13px 10px 13px 0;margin-left:10px;color:#333;border-right:1px solid #e0e0e0;display:block;overflow:hidden;position:relative}.add_regioncode .country_list span{display:inline-block;vertical-align:middle}.add_regioncode .turn_area{display:block}.add_regioncode .animation{position:relative;-webkit-animation:fade-in ease-in-out .5s;animation-name:fade-in;animation-timing-function:ease-in-out;animation-duration:.5s}.input_normal{width:100%}.lgncode{padding-bottom:14px}.lgncode .chkcode_img{*vertical-align:top}.code_label{float:left;*float:none;*display:inline-block;width:220px;margin-bottom:0}.code_label .code{width:190px}.code_label .placehld{width:190px}.chkcode_img{margin-left:10px;cursor:pointer}.fixed_bot{margin-top:50px}.btns_bg{padding-top:10px}.btnadpt{background-color:#ff6700;width:100%;height:50px;line-height:50px;display:block;margin-bottom:14px;text-align:center;font-size:14px;color:#fff;cursor:pointer}.btnadpt.btn_gray{background:#fff;margin-top:10px;border:1px solid #ddd;color:#333}.btnadpt.plain{width:160px;margin:0 6px 10px;display:inline-block;overflow:hidden}.btn_link{color:#ff6700}.btn_sns_icontype{background:url(https://account.xiaomi.com/static/res/166d6dc/account-static/respassport/acc-2014/img/icons_type.png);width:18px;height:18px;margin-right:10px;display:inline-block;vertical-align:middle}.btn_facebook{background-color:#3a5897}.btn_qq{background-color:#0288d1}.btn_weibo{background-color:#d32f2f}.btn_alipay{background-color:#0ae}.btn_weixin{background-color:#00d20d}.btn_google{background-color:#f8f8f8}.icon_default_facebook{background-position:0 0}.icon_default_google{background-position:20px 0}.icon_default_qq{background-position:-19px 0}.icon_default_weibo{background-position:-38px 0}.icon_default_alipay{background-position:-57px 0;width:25px}.icon_default_weixin{background-position:-83px 0;width:24px}.other_login_type{padding-top:50px;text-align:center}.oth_type_tit{border-top:1px solid #e0e0e0;padding-top:10px;padding-bottom:10px\9}.oth_type_txt{font-size:14px;color:#b0b0b0;margin:0 auto;text-align:center;width:100% \9}@media screen and (min-width:0\0){.oth_type_tit{padding-bottom:0}.oth_type_txt{width:auto}}.oth_type_links{padding-top:10px;text-align:center}.icon_type{width:30px;height:30px;margin:0 12px;display:inline-block;-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;border-radius:50%}.icon_type .btn_sns_icontype{display:block;margin:4px auto 0}.icon_type .icon_default_alipay{margin-top:6px;margin-left:4px}.icon_type .icon_default_weixin{margin-top:6px}.other_panel{margin-top:-5px}.n_links_area{text-align:center;color:#e0e0e0;float:right}.n_links_area a{font-size:14px}.n_links_area a:hover{color:#ff6700}.n_links_area span{padding-left:5px}.sms_link{float:left}.sms_link .btnadpt.btn_gray{color:#ff6700;border:0 none;height:auto;line-height:normal;margin:0}.site_info{padding-top:10px}.site_info_txt{color:#ff6700}.site_info_link{padding:0 5px}.country-container{width:100%;background:#fff;border:1px solid #e8e8e8;position:absolute;left:0;top:61px;z-index:98;display:none}.btn_commom_cancel{display:none}.country-code{height:280px;overflow-x:hidden;overflow-y:auto}.country-code .header{background:#fcdecc;padding:0 10px;margin-bottom:6px;line-height:30px;color:#ff6700}.country-code .record{padding:0 10px;line-height:39px;overflow:hidden;border-bottom:1px solid #e0e0e0;cursor:pointer}.country-code .record:hover{background:#eaeaea}.country-code .record span{height:39px;overflow:hidden}.country-code .record-country{float:left;max-width:74%;color:#000;cursor:pointer}.country-code .record-code{float:right;max-width:20%;color:#9d9d9d}.country-code .code_style1{background:#f2f6e9;border:1px solid #b7ce8b}.country-code .code_style2{background:#f8f2ec;border:1px solid #fac084}.country-code .code_style3{background:#f9eaeb;border:1px solid #fca1a7}.country-code .code_style4{background:#f2f2f2;border:1px solid #c9c9c9}.country-code .code_style5{background:#e1f6f6;border:1px solid #73bade}.navbar_panel{display:none}.countrycode-container-usual{display:none}.countrycode-container-usual .header{display:none}.countrycode-container-usual .list{zoom:1;*padding-bottom:10px}.countrycode-container-usual .list:before,.countrycode-container-usual .list:after{content:"";display:block}.countrycode-container-usual .list:after{clear:both}.countrycode-container-usual .record{float:left;margin:0 0 10px 10px;padding:6px 10px;line-height:20px;-webkit-border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px;border-radius:4px}.countrycode-container-usual .record span{height:20px}.countrycode-container-usual .record:hover{background:0}.countrycode-container-usual .record-country{max-width:100%}.countrycode-container-usual .record-code{max-width:100%;display:none}.n-footer{height:80px;margin-top:-80px;text-align:center}.nf-intro{padding:10px}.nf-link-area{text-align:center}.nf-link-area li{display:inline-block;*display:inline;*zoom:1}.nf-link-area a{display:inline-block;*display:inline;*zoom:1;padding:0 10px;color:#757575}.nf-link-area a:hover,.nf-link-area a.current{color:#333}.faq_link a{padding:0 10px}.ercode_area{background-color:#fff;width:854px;margin:0 auto;display:none;position:relative;z-index:98}.ercode_box{width:600px;height:400px;position:absolute;left:50%;top:50%;margin-top:-200px;margin-left:-300px}.code_close{background-color:#bdbdbd;-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;border-radius:50%;width:30px;height:30px;position:absolute;right:20px;top:20px}.icon_code_close{width:14px;height:14px;display:block;margin:8px auto 0;cursor:pointer}.code_hd{padding-bottom:50px;text-align:center}.code_tit{font-size:30px;color:#ff6700;font-weight:normal;padding-bottom:10px}.code_iframe{text-align:center}.ercode_container{background:#fff}.custom_sub_txt{display:none;text-align:center}.na-img-area{width:80px;height:80px;border:2px solid #e3e3e3;border-radius:50%;padding:4px;background:#fff;position:relative;z-index:4;margin:0 auto}.na-img-bg-area{width:100%;height:100%;border-radius:50%;overflow:hidden}.na-img-bg-area:empty{background:url(https://account.xiaomi.com/static/res/7c3e9b0/passport/acc-2014/img/n-avator-bg.png) 0 0 no-repeat}.na-img-area img{display:block;width:100%;height:100%;border-radius:50%}.single_imgarea{text-align:center;line-height:20px;font-size:14px;color:#333}.single_imgarea .us_name{padding-top:10px}.single_imgarea .user_id{padding-top:10px;color:#666}.single_imgarea,.confirm_con{line-height:20px;font-size:14px;color:#333}.confirm_con{padding-top:15px}.confirm_con .txt{padding-bottom:5px}.confirm_tips{padding-bottom:20px}.confirm_tips p{padding-top:5px}@-moz-document url-prefix(){.add_regioncode{width:100%;-moz-box-sizing:border-box;box-sizing:border-box}}.msk{width:100%;height:100%;background:#000;position:absolute;left:0;top:0;display:none;opacity:.4;filter:alpha(opacity=40)}.err_tip{margin-bottom:5px;line-height:20px;color:#ff6700;display:none}.icon_error{background-position:0 -69px}.icon_error{width:14px;height:14px;margin:-1px 5px 0 0;overflow:hidden;display:inline-block;vertical-align:middle}.err_tip span{vertical-align:middle}.err_forbidden{padding:10px;border:1px solid #e0e0e0;line-height:1.5;background:#f5f5f5;color:#ff6700;display:none}.error_bg{border:1px solid #ff6700 !important}.pwd_tip{display:block;color:#555}.pwd_tip .icon_error{display:none}.set_pwd_panel{display:none;padding-top:130px}.set_pwd_panel h4{padding-bottom:10px}.recycle{padding:10px 0 20px;text-align:left}.recycle p{padding-top:10px}@media only screen and (max-width:850px){.layout{width:100%;min-width:400px;min-height:480px}.mainbox{padding-bottom:15px}.header_tit{padding:25px 0 0}.header_tit_txt{font-size:22px;padding-top:15px}.btns_bg{padding-top:10px}.oth_type_links{padding-top:5px}}@-webkit-keyframes fade-in{from{left:-100%}to{left:0}}@-moz-keyframes fade-in{from{left:-100%}to{left:0}}@-o-keyframes fade-in{from{left:-100%}to{left:0}}@keyframes fade-in{from{left:-100%}to{left:0}}.send_ticket.disabled,.send_ticket.sending{color:#999;cursor:default}.send_ticket{cursor:pointer;color:#003ab5}.code_panel{padding:15px 20px;color:#333;display:block;overflow:hidden;border-left:1px solid #e0e0e0;position:absolute;right:0;top:0;display:none}.ac-box{padding:80px 0 20px 0;margin:0 auto;width:400px}.chooseTips{padding:40px 0;font-size:16px;text-align:center}.box_tips{padding:40px 0;font-size:16px;text-align:center}.sms_login .btn_turn,.sms_login .eye_panel,.sms_login #manual_code{display:none}.sms_login .pwd_panel input{width:210px}.code_label{border-right:1px solid #e0e0e0}.btnadpt.disabled{background-color:#ff936a;cursor:not-allowed}.btnadpt.btn_gray.disabled{color:#999;cursor:not-allowed}.tac{text-align:center}.ft16{font-size:16px}.ptb30{padding:30px 0}.blue{color:#32b5ff}@media screen and (-webkit-min-device-pixel-ratio:0){.login_user,.pwd_panel{display:box;display:-webkit-box;display:-moz-box}.login_user input,.pwd_panel input{-webkit-box-flex:1;-moz-box-flex:1;box-flex:1;flex-grow:1}.turn_area,.country_list,.item_account{float:none}.code_panel{position:static}}.agreeTip{margin-bottom:30px}.agreeTip .agreement_link,.agreeTip .privacy_link{font-weight:bold;text-decoration:underline}.oauth_box{width:358px;margin:0 auto;padding-bottom:30px}.oauth_box .title{color:#4a4a4a;font-size:16px;margin:10px 0;overflow:hidden;white-space:nowrap;-webkit-text-overflow:ellipsis;-moz-text-overflow:ellipsis;-o-text-overflow:ellipsis;text-overflow:ellipsis}.scope_list{margin-bottom:10px}.scope_list .scope_item{color:#9b9b9b;font-size:14px;line-height:30px;overflow:hidden;white-space:nowrap;-webkit-text-overflow:ellipsis;-moz-text-overflow:ellipsis;-o-text-overflow:ellipsis;text-overflow:ellipsis}.oauth_wrap,.scope_more{display:none}.icon_caret{display:block;margin:7px 0 0 5px;width:0;height:0;line-height:0;font-size:0;border-width:5px;border-style:solid;border-color:#9b9b9b transparent transparent transparent}.icon_caret.up{border-color:transparent transparent #9b9b9b transparent;margin:2px 0 0 5px}.search-code{padding:10px}.search-code-input{width:314px;height:22px;line-height:22px;padding:5px 10px 5px 10px;display:block;border:1px solid #e0e0e0}.search-mode .header,.search-mode .record{display:none}.search-mode .countrycode-container-usual .record,.search-mode .selected{display:block}.only_pwdlogin .ercode{display:none}.only_qrlogin .code_close,.only_qrlogin .code_hd{display:none}.only_qrlogin .ercode_box{width:auto;height:auto;position:static;margin:0;padding-top:100px\9}.only_qrlogin .ercode_pannel{width:100%;height:100%;display:-webkit-box;display:box;display:-moz-box;display:-o-box;display:-ms-box;-webkit-box-align:center;-moz-box-align:center;-o-box-align:center;box-align:center;-webkit-box-pack:center;-moz-box-pack:center;-o-box-pack:center;box-pack:center}@media screen and (min-width:0\0){.only_qrlogin .ercode_box{padding-top:100px}}.security_Controller{display:none}.checkbox_area{cursor:pointer}.checkbox{vertical-align:text-top;margin-right:3px}.security-controller-modal{width:400px;height:300px;left:50%;top:50%;margin-top:-150px;margin-left:-200px}.security_controller_panel{padding:30px 0 0 25px;line-height:22px}.security_controller_panel h4{color:#a1a1a1;padding-bottom:30px}.security_controller_panel p{color:#333}.security_controller_panel .tip_msg{color:#ff6700;padding:10px 0 0 30px}.tip_btns{padding-top:30px;text-align:center}.btn_tip{min-width:100px;_width:100px;height:33px;margin:0 2px;padding:0 10px;line-height:33px;text-align:center;display:inline-block;vertical-align:middle;cursor:pointer;-webkit-border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px;border-radius:4px}.btn_commom{background:#ff6700;border:1px solid #ff6700;color:#fff}.labelbox .security_controller_chk{width:320px;margin:2px;padding:11px 16px 11px 14px;border:1px solid #e0e0e0}.pwd-object{margin-bottom:14px}.nav_tabs_panel{display:none}.tabs_con{display:none}.tabs_con.now{display:block}.bgiframe{width:100%;height:100%;overflow:hidden;position:absolute;display:none}.bgiframe iframe{height:100%}#username[disabled=disabled]{color:#999}.add_regioncode.disable .country_list{cursor:default}.add_regioncode.disable .icon_arrow_down{display:none}</style>
+<script>
+(function(){function c(d,e){for(var s=0,c=d.length;s<c;s++)if(d[s]===e)return!0;return!1}function e(d,e){var c;if(d)for(var u,K=e?1:0;u=l[K++];)if(c=C[u])for(var P,I=0;(P=c[I])&&!0!==d(u,P);I++);}function t(d){var c;e(function(e,u){if((d+"").toUpperCase()===u.B)return c=c||u,!0});return c}function r(d){var c;e(function(e,u){d=(d+"").replace(/^0+/,"").replace(/^\+/,"");var K=(u.N+"").replace(/^0+/,"").replace(/^\+/,"");d===K&&(c=u)});return c}function F(d){var c;e(function(e,u){if((d+"").toLowerCase()===
+u.C.toLowerCase())return c=u,!0});return c}function w(d){return t(d)||r(d)||F(d)}var l="usual A B C D E F G H I J K L M N O P Q R S T U V W X Y Z".split(" "),C={usual:[{C:"\u4e2d\u56fd",N:"+86",B:"CN"},{C:"\u4e2d\u56fd\u53f0\u6e7e",N:"+886",B:"TW"},{C:"\u4e2d\u56fd\u9999\u6e2f",N:"+852",B:"HK"},{C:"Brazil",N:"+55",B:"BR"},{C:"India",N:"+91",B:"IN"},{C:"Indonesia",N:"+62",B:"ID"},{C:"Malaysia",N:"+60",B:"MY"}],A:[{B:"AD",C:"Andorra",N:"+376"},{B:"AF",C:"Afghanistan",N:"+93"},{B:"AG",C:"Antigua and Barbuda",
+N:"+1"},{B:"AI",C:"Anguilla",N:"+1"},{B:"AL",C:"Albania",N:"+355"},{B:"AM",C:"Armenia",N:"+374"},{B:"AO",C:"Angola",N:"+244"},{B:"AR",C:"Argentina",N:"+54"},{B:"AS",C:"American Samoa",N:"+1"},{B:"AT",C:"Austria",N:"+43"},{B:"AU",C:"Australia",N:"+61"},{B:"AW",C:"Aruba",N:"+297"},{B:"AZ",C:"Azerbaijan",N:"+994"},{B:"DZ",C:"Algeria",N:"+213"}],B:[{B:"BA",C:"Bosnia and Herzegovina",N:"+387"},{B:"BB",C:"Barbados",N:"+1"},{B:"BD",C:"Bangladesh",N:"+880"},{B:"BE",C:"Belgium",N:"+32"},{B:"BF",C:"Burkina Faso",
+N:"+226"},{B:"BG",C:"Bulgaria",N:"+359"},{B:"BH",C:"Bahrain",N:"+973"},{B:"BI",C:"Burundi",N:"+257"},{B:"BJ",C:"Benin",N:"+229"},{B:"BM",C:"Bermuda",N:"+1"},{B:"BN",C:"Brunei",N:"+673"},{B:"BO",C:"Bolivia",N:"+591"},{B:"BQ",C:"Bonaire, Sint Eustatius and Saba",N:"+599"},{B:"BR",C:"Brazil",N:"+55"},{B:"BS",C:"Bahamas",N:"+1"},{B:"BT",C:"Bhutan",N:"+975"},{B:"BW",C:"Botswana",N:"+267"},{B:"BY",C:"Belarus",N:"+375"},{B:"BZ",C:"Belize",N:"+501"},{B:"IO",C:"British Indian Ocean Territory",N:"+246"},{B:"VG",
+C:"British Virgin Islands",N:"+1"}],C:[{B:"CA",C:"Canada",N:"+1"},{B:"CC",C:"Cocos Islands",N:"+61"},{B:"CF",C:"Central African Republic",N:"+236"},{B:"CG",C:"Congo",N:"+242"},{B:"CI",C:"C\u00f4te d'Ivoire",N:"+225"},{B:"CK",C:"Cook Islands",N:"+682"},{B:"CL",C:"Chile",N:"+56"},{B:"CM",C:"Cameroon",N:"+237"},{B:"CN",C:"China",N:"+86"},{B:"CO",C:"Colombia",N:"+57"},{B:"CR",C:"Costa Rica",N:"+506"},{B:"CU",C:"Cuba",N:"+53"},{B:"CV",C:"Cape Verde",N:"+238"},{B:"CW",C:"Cura\u00e7ao",N:"+599"},{B:"CX",
+C:"Christmas Island",N:"+61"},{B:"CY",C:"Cyprus",N:"+357"},{B:"CZ",C:"Czech Republic",N:"+420"},{B:"HR",C:"Croatia",N:"+385"},{B:"KH",C:"Cambodia",N:"+855"},{B:"KM",C:"Comoros",N:"+269"},{B:"KY",C:"Cayman Islands",N:"+1"},{B:"TD",C:"Chad",N:"+235"}],D:[{B:"DJ",C:"Djibouti",N:"+253"},{B:"DK",C:"Denmark",N:"+45"},{B:"DM",C:"Dominica",N:"+1"},{B:"DO",C:"Dominican Republic",N:"+1"}],E:[{B:"EC",C:"Ecuador",N:"+593"},{B:"EE",C:"Estonia",N:"+372"},{B:"EG",C:"Egypt",N:"+20"},{B:"ER",C:"Eritrea",N:"+291"},
+{B:"ET",C:"Ethiopia",N:"+251"},{B:"GQ",C:"Equatorial Guinea",N:"+240"},{B:"SV",C:"El Salvador",N:"+503"}],F:[{B:"FI",C:"Finland",N:"+358"},{B:"FJ",C:"Fiji",N:"+679"},{B:"FK",C:"Falkland Islands",N:"+5+"},{B:"FO",C:"Faroe Islands",N:"+298"},{B:"FR",C:"France",N:"+33"},{B:"GF",C:"French Guiana",N:"+594"},{B:"PF",C:"French Polynesia",N:"+689"}],G:[{B:"DE",C:"Germany",N:"+49"},{B:"GA",C:"Gabon",N:"+241"},{B:"GD",C:"Grenada",N:"+1"},{B:"GE",C:"Georgia",N:"+995"},{B:"GG",C:"Guernsey",N:"+44"},{B:"GH",C:"Ghana",
+N:"+233"},{B:"GI",C:"Gibraltar",N:"+350"},{B:"GL",C:"Greenland",N:"+299"},{B:"GM",C:"Gambia",N:"+220"},{B:"GN",C:"Guinea",N:"+224"},{B:"GP",C:"Guadeloupe",N:"+590"},{B:"GR",C:"Greece",N:"+30"},{B:"GT",C:"Guatemala",N:"+502"},{B:"GU",C:"Guam",N:"+1"},{B:"GW",C:"Guinea-Bissau",N:"+245"},{B:"GY",C:"Guyana",N:"+592"}],H:[{B:"HK",C:"Hong Kong",N:"+852"},{B:"HN",C:"Honduras",N:"+504"},{B:"HT",C:"Haiti",N:"+509"},{B:"HU",C:"Hungary",N:"+36"}],I:[{B:"ID",C:"Indonesia",N:"+62"},{B:"IE",C:"Ireland",N:"+353"},
+{B:"IL",C:"Israel",N:"+972"},{B:"IM",C:"Isle Of Man",N:"+44"},{B:"IN",C:"India",N:"+91"},{B:"IQ",C:"Iraq",N:"+964"},{B:"IR",C:"Iran",N:"+98"},{B:"IS",C:"Iceland",N:"+354"},{B:"IT",C:"Italy",N:"+39"}],J:[{B:"JE",C:"Jersey",N:"+44"},{B:"JM",C:"Jamaica",N:"+1"},{B:"JO",C:"Jordan",N:"+962"},{B:"JP",C:"Japan",N:"+81"}],K:[{B:"KE",C:"Kenya",N:"+254"},{B:"KG",C:"Kyrgyzstan",N:"+996"},{B:"KI",C:"Kiribati",N:"+686"},{B:"KW",C:"Kuwait",N:"+965"},{B:"KZ",C:"Kazakhstan",N:"+7"}],L:[{B:"LA",C:"Laos",N:"+856"},
+{B:"LB",C:"Lebanon",N:"+961"},{B:"LI",C:"Liechtenstein",N:"+423"},{B:"LR",C:"Liberia",N:"+231"},{B:"LS",C:"Lesotho",N:"+266"},{B:"LT",C:"Lithuania",N:"+370"},{B:"LU",C:"Luxembourg",N:"+352"},{B:"LV",C:"Latvia",N:"+371"},{B:"LY",C:"Libya",N:"+218"}],M:[{B:"FM",C:"Micronesia",N:"+691"},{B:"MA",C:"Morocco",N:"+212"},{B:"MC",C:"Monaco",N:"+377"},{B:"MD",C:"Moldova",N:"+373"},{B:"ME",C:"Montenegro",N:"+382"},{B:"MG",C:"Madagascar",N:"+261"},{B:"MH",C:"Marshall Islands",N:"+692"},{B:"MK",C:"Macedonia",
+N:"+389"},{B:"ML",C:"Mali",N:"+223"},{B:"MM",C:"Myanmar",N:"+95"},{B:"MN",C:"Mongolia",N:"+976"},{B:"MO",C:"Macao",N:"+853"},{B:"MQ",C:"Martinique",N:"+596"},{B:"MR",C:"Mauritania",N:"+222"},{B:"MS",C:"Montserrat",N:"+1"},{B:"MT",C:"Malta",N:"+356"},{B:"MU",C:"Mauritius",N:"+230"},{B:"MV",C:"Maldives",N:"+960"},{B:"MW",C:"Malawi",N:"+265"},{B:"MX",C:"Mexico",N:"+52"},{B:"MY",C:"Malaysia",N:"+60"},{B:"MZ",C:"Mozambique",N:"+258"},{B:"YT",C:"Mayotte",N:"+262"}],N:[{B:"KP",C:"North Korea",N:"+850"},
+{B:"MP",C:"Northern Mariana Islands",N:"+1"},{B:"NA",C:"Namibia",N:"+264"},{B:"NC",C:"New Caledonia",N:"+687"},{B:"NE",C:"Niger",N:"+227"},{B:"NF",C:"Norfolk Island",N:"+672"},{B:"NG",C:"Nigeria",N:"+234"},{B:"NI",C:"Nicaragua",N:"+505"},{B:"NL",C:"Netherlands",N:"+31"},{B:"NO",C:"Norway",N:"+47"},{B:"NP",C:"Nepal",N:"+977"},{B:"NR",C:"Nauru",N:"+674"},{B:"NU",C:"Niue",N:"+683"},{B:"NZ",C:"New Zealand",N:"+64"}],O:[{B:"OM",C:"Oman",N:"+968"}],P:[{B:"PA",C:"Panama",N:"+507"},{B:"PE",C:"Peru",N:"+51"},
+{B:"PG",C:"Papua New Guinea",N:"+675"},{B:"PH",C:"Philippines",N:"+63"},{B:"PK",C:"Pakistan",N:"+92"},{B:"PL",C:"Poland",N:"+48"},{B:"PR",C:"Puerto Rico",N:"+1"},{B:"PS",C:"Palestine",N:"+970"},{B:"PT",C:"Portugal",N:"+351"},{B:"PW",C:"Palau",N:"+680"},{B:"PY",C:"Paraguay",N:"+595"}],Q:[{B:"QA",C:"Qatar",N:"+974"}],R:[{B:"RE",C:"Reunion",N:"+262"},{B:"RO",C:"Romania",N:"+40"},{B:"RU",C:"Russia",N:"+7"},{B:"RW",C:"Rwanda",N:"+250"}],S:[{B:"BL",C:"Saint Barth\u00e9lemy",N:"+590"},{B:"CH",C:"Switzerland",
+N:"+41"},{B:"ES",C:"Spain",N:"+34"},{B:"KN",C:"Saint Kitts And Nevis",N:"+1"},{B:"KR",C:"South Korea",N:"+82"},{B:"LC",C:"Saint Lucia",N:"+1"},{B:"LK",C:"Sri Lanka",N:"+94"},{B:"MF",C:"Saint Martin",N:"+590"},{B:"PM",C:"Saint Pierre And Miquelon",N:"+508"},{B:"RS",C:"Serbia",N:"+381"},{B:"SA",C:"Saudi Arabia",N:"+966"},{B:"SB",C:"Solomon Islands",N:"+677"},{B:"SC",C:"Seychelles",N:"+248"},{B:"SD",C:"Sudan",N:"+249"},{B:"SE",C:"Sweden",N:"+46"},{B:"SG",C:"Singapore",N:"+65"},{B:"SH",C:"Saint Helena",
+N:"+290"},{B:"SI",C:"Slovenia",N:"+386"},{B:"SJ",C:"Svalbard And Jan Mayen",N:"+47"},{B:"SK",C:"Slovakia",N:"+421"},{B:"SL",C:"Sierra Leone",N:"+232"},{B:"SM",C:"San Marino",N:"+378"},{B:"SN",C:"Senegal",N:"+221"},{B:"SO",C:"Somalia",N:"+252"},{B:"SR",C:"Suriname",N:"+597"},{B:"ST",C:"Sao Tome And Principe",N:"+239"},{B:"SX",C:"Sint Maarten (Dutch part)",N:"+1"},{B:"SY",C:"Syria",N:"+963"},{B:"SZ",C:"Swaziland",N:"+268"},{B:"VC",C:"Saint Vincent And The Grenadines",N:"+1"},{B:"WS",C:"Samoa",N:"+685"},
+{B:"ZA",C:"South Africa",N:"+27"}],T:[{B:"CD",C:"The Democratic Republic Of Congo",N:"+243"},{B:"TC",C:"Turks And Caicos Islands",N:"+1"},{B:"TG",C:"Togo",N:"+228"},{B:"TH",C:"Thailand",N:"+66"},{B:"TJ",C:"Tajikistan",N:"+992"},{B:"TK",C:"Tokelau",N:"+690"},{B:"TL",C:"Timor-Leste",N:"+670"},{B:"TM",C:"Turkmenistan",N:"+993"},{B:"TN",C:"Tunisia",N:"+216"},{B:"TO",C:"Tonga",N:"+676"},{B:"TR",C:"Turkey",N:"+90"},{B:"TT",C:"Trinidad and Tobago",N:"+1"},{B:"TV",C:"Tuvalu",N:"+688"},{B:"TW",C:"Taiwan",
+N:"+886"},{B:"TZ",C:"Tanzania",N:"+255"}],U:[{B:"AE",C:"United Arab Emirates",N:"+971"},{B:"GB",C:"United Kingdom",N:"+44"},{B:"UA",C:"Ukraine",N:"+380"},{B:"UG",C:"Uganda",N:"+256"},{B:"US",C:"United States",N:"+1"},{B:"UY",C:"Uruguay",N:"+598"},{B:"UZ",C:"Uzbekistan",N:"+998"},{B:"VI",C:"U.S. Virgin Islands",N:"+1"}],V:[{B:"VA",C:"Vatican",N:"+379"},{B:"VE",C:"Venezuela",N:"+58"},{B:"VN",C:"Vietnam",N:"+84"},{B:"VU",C:"Vanuatu",N:"+678"}],W:[{B:"EH",C:"Western Sahara",N:"+212"},{B:"WF",C:"Wallis And Futuna",
+N:"+681"}],Y:[{B:"YE",C:"Yemen",N:"+967"}],Z:[{B:"ZM",C:"Zambia",N:"+260"},{B:"ZW",C:"Zimbabwe",N:"+263"}]};if(JSP_VAR){var H=JSP_VAR.locale;JSP_VAR.dataCenterZone&&"China"!==JSP_VAR.dataCenterZone&&"zh_CN"!==H&&(C.usual["1"].C="\u53f0\u7063");0===H.indexOf("zh")&&(H="zh_CN"===H?"zh_CN":"zh_TW");c(["zh_CN","zh_TW","en"],H)||(C.usual=[{C:"Brazil",N:"+55",B:"BR"},{C:"India",N:"+91",B:"IN"},{C:"Indonesia",N:"+62",B:"ID"},{C:"Malaysia",N:"+60",B:"MY"}])}window.RegionsCode={getAll:function(d,c,e){for(var u=
+["<div class='country-code'>"],K,P,I,ya=0;P=l[ya++];)if(K=C[P],I="",d&&P in d&&(I=d[P]),K){u.push("<div class='container countrycode-container-"+P+"'><div class='header'>"+(I||P)+"</div>");u.push("<ul class='list'>");for(var r=0;I=K[r++];)P=c?(I.N+"").replace(/^0+/,function(){return"+"}):"",u.push("<li class='record clearfix'><span class='record-country' data-code='"+P+"' data-brief='"+I.B+"'>"+I.C+"</span><span class='record-code'>"+P+"</span></li>");u.push("</ul></div>")}d=cancelStr="";cancelStr=
+JSP_VAR&&JSP_VAR.cancel?JSP_VAR.cancel:"Cancel";e?d="":d='<div class="cancel_panel"><div class="cancel_box"><a class="btnadpt bg_white btn-cancel" href="javascript:void(0);">'+cancelStr+"</a></div></div>";u.push("</div>");u.push(d);u.push('<div class="navbar_panel"><div class="navbar"><a to="usual">#</a>');for(e=0;26>e;e++)d=String.fromCharCode(65+e),u.push('<a to="'+d+'">'+d+"</a>");u.push("</div></div>");return u.join("")},getData:function(){return{list:l,data:C}},getByBrief:t,getByCode:r,getByCountry:F,
+search:w,searchLike:function(d){var c=[];if(d=(d+"").replace(/^\+/,"")){var s=w(d);s&&c.push(s);e(function(e,K){-1!==K.C.toLowerCase().indexOf(d)?c.push(K):-1!==(K.N+"").indexOf(d)&&c.push(K)})}return c},searchLikeData:function(d){var c=[];if(d=(d+"").replace(/^\+/,"")){var s=w(d);s&&c.push(s);e(function(e,K){RegExp("^"+d,"i").test(K.C.toLowerCase())?c.push(K):RegExp("^"+d).test(K.N.replace(/^\+/,""))&&c.push(K)})}return c},addUsual:function(c){var e;if(e=c.B)if(e=c.C)if(e=c.N){a:{e=0;for(var s;s=
+C.usual[e++];)if(s.N===c.N||c.B===s.B){e=!0;break a}e=!1}e=!e}e&&C.usual&&C.usual.unshift(c)}}})();
+var Base64=function(){_keyStr="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";_utf8_encode=function(c){c=c.replace(/\r\n/g,"\n");for(var e="",t=0;t<c.length;t++){var r=c.charCodeAt(t);128>r?e+=String.fromCharCode(r):(127<r&&2048>r?e+=String.fromCharCode(r>>6|192):(e+=String.fromCharCode(r>>12|224),e+=String.fromCharCode(r>>6&63|128)),e+=String.fromCharCode(r&63|128))}return e};_utf8_decode=function(c){for(var e="",t=0,r=c1=c2=0;t<c.length;)r=c.charCodeAt(t),128>r?(e+=String.fromCharCode(r),
+t++):191<r&&224>r?(c2=c.charCodeAt(t+1),e+=String.fromCharCode((r&31)<<6|c2&63),t+=2):(c2=c.charCodeAt(t+1),c3=c.charCodeAt(t+2),e+=String.fromCharCode((r&15)<<12|(c2&63)<<6|c3&63),t+=3);return e};return{encode:function(c){var e="",t,r,F,w,l,C,H=0;for(c=_utf8_encode(c);H<c.length;)t=c.charCodeAt(H++),r=c.charCodeAt(H++),F=c.charCodeAt(H++),w=t>>2,t=(t&3)<<4|r>>4,l=(r&15)<<2|F>>6,C=F&63,isNaN(r)?l=C=64:isNaN(F)&&(C=64),e=e+_keyStr.charAt(w)+_keyStr.charAt(t)+_keyStr.charAt(l)+_keyStr.charAt(C);return e},
+decode:function(c){var e="",t,r,F,w,l,C=0;for(c=c.replace(/[^A-Za-z0-9\+\/\=]/g,"");C<c.length;)t=_keyStr.indexOf(c.charAt(C++)),r=_keyStr.indexOf(c.charAt(C++)),w=_keyStr.indexOf(c.charAt(C++)),l=_keyStr.indexOf(c.charAt(C++)),t=t<<2|r>>4,r=(r&15)<<4|w>>2,F=(w&3)<<6|l,e+=String.fromCharCode(t),64!=w&&(e+=String.fromCharCode(r)),64!=l&&(e+=String.fromCharCode(F));return e=_utf8_decode(e)}}}(),CryptoJS=CryptoJS||function(c,e){var t={},r=t.lib={},F=function(){},w=r.Base={extend:function(K){F.prototype=
+this;var c=new F;K&&c.mixIn(K);c.hasOwnProperty("init")||(c.init=function(){c.$super.init.apply(this,arguments)});c.init.prototype=c;c.$super=this;return c},create:function(){var c=this.extend();c.init.apply(c,arguments);return c},init:function(){},mixIn:function(c){for(var e in c)c.hasOwnProperty(e)&&(this[e]=c[e]);c.hasOwnProperty("toString")&&(this.toString=c.toString)},clone:function(){return this.init.prototype.extend(this)}},l=r.WordArray=w.extend({init:function(c,d){c=this.words=c||[];this.sigBytes=
+d!=e?d:4*c.length},toString:function(c){return(c||H).stringify(this)},concat:function(c){var e=this.words,d=c.words,s=this.sigBytes;c=c.sigBytes;this.clamp();if(s%4)for(var u=0;u<c;u++)e[s+u>>>2]|=(d[u>>>2]>>>24-u%4*8&255)<<24-(s+u)%4*8;else if(65535<d.length)for(u=0;u<c;u+=4)e[s+u>>>2]=d[u>>>2];else e.push.apply(e,d);this.sigBytes+=c;return this},clamp:function(){var e=this.words,d=this.sigBytes;e[d>>>2]&=4294967295<<32-d%4*8;e.length=c.ceil(d/4)},clone:function(){var c=w.clone.call(this);c.words=
+this.words.slice(0);return c},random:function(e){for(var d=[],s=0;s<e;s+=4)d.push(4294967296*c.random()|0);return new l.init(d,e)}}),C=t.enc={},H=C.Hex={stringify:function(c){var e=c.words;c=c.sigBytes;for(var d=[],s=0;s<c;s++){var u=e[s>>>2]>>>24-s%4*8&255;d.push((u>>>4).toString(16));d.push((u&15).toString(16))}return d.join("")},parse:function(c){for(var e=c.length,d=[],s=0;s<e;s+=2)d[s>>>3]|=parseInt(c.substr(s,2),16)<<24-s%8*4;return new l.init(d,e/2)}},d=C.Latin1={stringify:function(c){var e=
+c.words;c=c.sigBytes;for(var d=[],s=0;s<c;s++)d.push(String.fromCharCode(e[s>>>2]>>>24-s%4*8&255));return d.join("")},parse:function(c){for(var e=c.length,d=[],s=0;s<e;s++)d[s>>>2]|=(c.charCodeAt(s)&255)<<24-s%4*8;return new l.init(d,e)}},M=C.Utf8={stringify:function(c){try{return decodeURIComponent(escape(d.stringify(c)))}catch(e){throw Error("Malformed UTF-8 data");}},parse:function(c){return d.parse(unescape(encodeURIComponent(c)))}},s=r.BufferedBlockAlgorithm=w.extend({reset:function(){this._data=
+new l.init;this._nDataBytes=0},_append:function(c){"string"==typeof c&&(c=M.parse(c));this._data.concat(c);this._nDataBytes+=c.sigBytes},_process:function(e){var d=this._data,s=d.words,u=d.sigBytes,r=this.blockSize,f=u/(4*r),f=e?c.ceil(f):c.max((f|0)-this._minBufferSize,0);e=f*r;u=c.min(4*e,u);if(e){for(var t=0;t<e;t+=r)this._doProcessBlock(s,t);t=s.splice(0,e);d.sigBytes-=u}return new l.init(t,u)},clone:function(){var c=w.clone.call(this);c._data=this._data.clone();return c},_minBufferSize:0});r.Hasher=
+s.extend({cfg:w.extend(),init:function(c){this.cfg=this.cfg.extend(c);this.reset()},reset:function(){s.reset.call(this);this._doReset()},update:function(c){this._append(c);this._process();return this},finalize:function(c){c&&this._append(c);return this._doFinalize()},blockSize:16,_createHelper:function(c){return function(e,d){return(new c.init(d)).finalize(e)}},_createHmacHelper:function(c){return function(e,d){return(new u.HMAC.init(c,d)).finalize(e)}}});var u=t.algo={};return t}(Math);
+(function(c){function e(c,e,d,r,t,l,w){c=c+(e&d|~e&r)+t+w;return(c<<l|c>>>32-l)+e}function t(c,e,d,r,t,l,w){c=c+(e&r|d&~r)+t+w;return(c<<l|c>>>32-l)+e}function r(c,e,d,r,t,l,w){c=c+(e^d^r)+t+w;return(c<<l|c>>>32-l)+e}function F(c,e,d,r,t,l,w){c=c+(d^(e|~r))+t+w;return(c<<l|c>>>32-l)+e}for(var w=CryptoJS,l=w.lib,C=l.WordArray,H=l.Hasher,l=w.algo,d=[],M=0;64>M;M++)d[M]=4294967296*c.abs(c.sin(M+1))|0;l=l.MD5=H.extend({_doReset:function(){this._hash=new C.init([1732584193,4023233417,2562383102,271733878])},
+_doProcessBlock:function(c,u){for(var l=0;16>l;l++){var w=u+l,I=c[w];c[w]=(I<<8|I>>>24)&16711935|(I<<24|I>>>8)&4278255360}var l=this._hash.words,w=c[u+0],I=c[u+1],C=c[u+2],H=c[u+3],f=c[u+4],M=c[u+5],ba=c[u+6],A=c[u+7],x=c[u+8],z=c[u+9],J=c[u+10],G=c[u+11],$=c[u+12],ca=c[u+13],y=c[u+14],V=c[u+15],q=l[0],m=l[1],n=l[2],p=l[3],q=e(q,m,n,p,w,7,d[0]),p=e(p,q,m,n,I,12,d[1]),n=e(n,p,q,m,C,17,d[2]),m=e(m,n,p,q,H,22,d[3]),q=e(q,m,n,p,f,7,d[4]),p=e(p,q,m,n,M,12,d[5]),n=e(n,p,q,m,ba,17,d[6]),m=e(m,n,p,q,A,22,
+d[7]),q=e(q,m,n,p,x,7,d[8]),p=e(p,q,m,n,z,12,d[9]),n=e(n,p,q,m,J,17,d[10]),m=e(m,n,p,q,G,22,d[11]),q=e(q,m,n,p,$,7,d[12]),p=e(p,q,m,n,ca,12,d[13]),n=e(n,p,q,m,y,17,d[14]),m=e(m,n,p,q,V,22,d[15]),q=t(q,m,n,p,I,5,d[16]),p=t(p,q,m,n,ba,9,d[17]),n=t(n,p,q,m,G,14,d[18]),m=t(m,n,p,q,w,20,d[19]),q=t(q,m,n,p,M,5,d[20]),p=t(p,q,m,n,J,9,d[21]),n=t(n,p,q,m,V,14,d[22]),m=t(m,n,p,q,f,20,d[23]),q=t(q,m,n,p,z,5,d[24]),p=t(p,q,m,n,y,9,d[25]),n=t(n,p,q,m,H,14,d[26]),m=t(m,n,p,q,x,20,d[27]),q=t(q,m,n,p,ca,5,d[28]),
+p=t(p,q,m,n,C,9,d[29]),n=t(n,p,q,m,A,14,d[30]),m=t(m,n,p,q,$,20,d[31]),q=r(q,m,n,p,M,4,d[32]),p=r(p,q,m,n,x,11,d[33]),n=r(n,p,q,m,G,16,d[34]),m=r(m,n,p,q,y,23,d[35]),q=r(q,m,n,p,I,4,d[36]),p=r(p,q,m,n,f,11,d[37]),n=r(n,p,q,m,A,16,d[38]),m=r(m,n,p,q,J,23,d[39]),q=r(q,m,n,p,ca,4,d[40]),p=r(p,q,m,n,w,11,d[41]),n=r(n,p,q,m,H,16,d[42]),m=r(m,n,p,q,ba,23,d[43]),q=r(q,m,n,p,z,4,d[44]),p=r(p,q,m,n,$,11,d[45]),n=r(n,p,q,m,V,16,d[46]),m=r(m,n,p,q,C,23,d[47]),q=F(q,m,n,p,w,6,d[48]),p=F(p,q,m,n,A,10,d[49]),n=
+F(n,p,q,m,y,15,d[50]),m=F(m,n,p,q,M,21,d[51]),q=F(q,m,n,p,$,6,d[52]),p=F(p,q,m,n,H,10,d[53]),n=F(n,p,q,m,J,15,d[54]),m=F(m,n,p,q,I,21,d[55]),q=F(q,m,n,p,x,6,d[56]),p=F(p,q,m,n,V,10,d[57]),n=F(n,p,q,m,ba,15,d[58]),m=F(m,n,p,q,ca,21,d[59]),q=F(q,m,n,p,f,6,d[60]),p=F(p,q,m,n,G,10,d[61]),n=F(n,p,q,m,C,15,d[62]),m=F(m,n,p,q,z,21,d[63]);l[0]=l[0]+q|0;l[1]=l[1]+m|0;l[2]=l[2]+n|0;l[3]=l[3]+p|0},_doFinalize:function(){var e=this._data,d=e.words,l=8*this._nDataBytes,r=8*e.sigBytes;d[r>>>5]|=128<<24-r%32;var t=
+c.floor(l/4294967296);d[(r+64>>>9<<4)+15]=(t<<8|t>>>24)&16711935|(t<<24|t>>>8)&4278255360;d[(r+64>>>9<<4)+14]=(l<<8|l>>>24)&16711935|(l<<24|l>>>8)&4278255360;e.sigBytes=4*(d.length+1);this._process();e=this._hash;d=e.words;for(l=0;4>l;l++)r=d[l],d[l]=(r<<8|r>>>24)&16711935|(r<<24|r>>>8)&4278255360;return e},clone:function(){var c=H.clone.call(this);c._hash=this._hash.clone();return c}});w.MD5=H._createHelper(l);w.HmacMD5=H._createHmacHelper(l)})(Math);
+(function(c,e,t){function r(a){return a.getFullYear()+"-"+(a.getMonth()+1)+"-"+a.getDate()+" "+a.getHours()+":"+a.getMinutes()+":"+a.getSeconds()+":"+a.getMilliseconds()}function F(a,g){var b=g.parentNode;b.lastChild==g?b.appendChild(a):b.insertBefore(a,g.nextSibling)}function w(a,g){if(Array.prototype.forEach)Array.prototype.forEach.call(a,g);else for(var b=0,B=a.length;b<B;b++)g.call(a,a[b],b)}function l(a){return(a+"").replace(/^\s+/,"").replace(/\s+$/,"")}function C(a){return(a+"").replace(/\</g,
+"&lt").replace(/\>/g,"&gt")}function H(a,g,b,B,c,d){var f=new Date;f.setDate(f.getDate()+b);e.cookie=a+"="+encodeURIComponent(g)+";expires="+f.toGMTString()+";path="+B+";domain="+c+(null==d?"":";max-age="+d)}function d(a,g,b){H(a,"",new Date(0),g,b)}function M(a){for(var g=e.cookie.split(";"),b="",c=0;c<g.length;c++)if(l(g[c]).substr(0,a.length)==a){b=l(g[c]).substr(a.length+1);break}return decodeURIComponent(b)}function s(a){var g="",b=!1;if(0===location.search.length)return g;if(0==location.search.indexOf("?")&&
+1<location.search.indexOf("="))for(arrSource=location.search.substring(1,location.search.length).split("&"),Q=0;Q<arrSource.length&&!b;)0<arrSource[Q].indexOf("=")&&arrSource[Q].split("=")[0].toLowerCase()==a.toLowerCase()&&(g=arrSource[Q].split("=")[1],b=!0),Q++;return g}function u(a,g){if(a===g)return!0;if(a.constructor!==g.constructor||!(a instanceof Object&&g instanceof Object))return!1;for(var b in a)if(a.hasOwnProperty(b)&&(!g.hasOwnProperty(b)||a[b]!==g[b]))return!1;for(b in g)if(g.hasOwnProperty(b)&&
+!a.hasOwnProperty(b))return!1;return!0}function K(a,g,b){if(!g)return a;b=b||/\{([\w-]+)\}/g;a=P(a);return a.replace(b,function(a,e){if(g[e]!==t){var d;d=g[e]instanceof Function?g[e].call(g):P(g[e]);return b.test(d)?K(d,g,b):d}return c.__debug__?e:""})}function P(a){var g={"&quot;":'"',"&#39;":"'"},b;for(b in g)g.hasOwnProperty(b)&&(a=(a+"").replace(RegExp(b,"g"),g[b]));return a}function I(a,g){v.add("objectExtend",g);for(var b in g)a[b]=g[b];return a}function ya(a){for(var g in a)return!1;return!0}
+function Za(a){try{return Array.prototype.slice.call(a,0)}catch(g){for(var b=[],c=0,e=a.length;c<e;c++)b.push(a[c]);return b}}function f(a,g){a=a||"";g=g||e;if(0===a.indexOf("#"))return g.getElementById(a.substring(1));var b=[];if(/^[a-zA-Z]{1,}$/.test(a))b=Za(g.getElementsByTagName(a));else if(0===a.indexOf("."))if(g.querySelectorAll)b=Za(g.querySelectorAll(a));else for(var c=g.getElementsByTagName("*"),d=a.substring(1),f=0,h=c.length;f<h;f++)J(c[f],d)&&b.push(c[f]);return b}function Ka(a){return"[object Array]"===
+Object.prototype.toString.call(a)}function ba(a,g){for(var b=0,c=a.length;b<c;b++)if(a[b]===g)return!0;return!1}function A(a,g){a&&1===a.nodeType&&("none"===a.style.display?a.style.display=g?"block":a._oldDisplay||"":g&&(a.style.display="block"))}function x(a){a&&1===a.nodeType&&"none"!==a.style.display&&(a._oldDisplay=a.style.display||"",a.style.display="none")}function z(a,g){if(Ka(a))for(var b=0,c=a.length;b<c;b++)z(a[b],g);else J(a,g)||(a.className=""===a.className?g:a.className+(" "+g))}function J(a,
+g){if(a.className){var b=a.className.split(/\s+/);b.unshift("000");b.push("000");return 2<b.length&&-1<b.join(",").indexOf(","+g+",")}return!1}function G(a,g){if(Ka(a))for(var b=0,c=a.length;b<c;b++)G(a[b],g);else if(J(a,g)){for(var b=a.className.split(/\s+/),c=0,e=b.length;c<e;c++)if(g===b[c]){b.splice(c,1);break}a.className=b.join(" ")}}function $(a,g){var b=("getComputedStyle"in c?c.getComputedStyle(a):a.currentStyle)[g];if("width"===g||"height"===g)b=Math.max(parseInt(b)||0,a["client"+ca(g)],
+a["offset"+ca(g)]);return b}function ca(a){return(a+"").replace(/^[a-z]/,function(a){return a.toUpperCase()})}function y(a,g,b){a.addEventListener?a.addEventListener(g,b,!1):a.attachEvent?a.attachEvent("on"+g,b):a["on"+g]=b}function V(a,g){try{a[g]()}catch(b){}}function q(a){return"string"===typeof a?c.JSON&&c.JSON.parse?c.JSON.parse(a):eval("("+a+")"):a}function m(a){var g={};a=(a+"").replace("&&&START&&&","");try{g=q(a)}catch(b){}return g}function n(a){if(c.JSON&&c.JSON.stringify)return c.JSON.stringify(a);
+var g=[];if("object"==typeof a){if(a instanceof Array){var b=[];g.push("[");for(var B=0;B<a.length;B++)b.push(n(a[B]));g.push(b.join());g.push("]")}else if(null!=a){g.push("{");b=[];for(B in a)b.push('"'+B+'":'+n(a[B]));g.push(b.join());g.push("}")}return g.join("")}return"number"!==typeof a?'"'+(a||"")+'"':a}function p(a){var g=[],b="",c;for(c in a)b=typeof a[c],"object"!==b||"number"==b?g.push(c+"="+a[c]):g.push(c+"="+encodeURIComponent(p(a[c])));return g.join("&")}function da(a,g){var b=e.createElement("input");
+if(!("placeholder"in b||b._initedplace)){b._initedplace=!0;var c=a.getAttribute("placeholder"),d=a.id||a.name,f=a.className;b.value=c;b.id=d+"_pla";b.className=f;z(a,"hideimportant");a.setAttribute("pla_id",d+"_pla");b.setAttribute("for_id",d);b.style.color="#999";a.parentNode.insertBefore(b,a);y(b,"focus",function(){z(b,"hideimportant");G(a,"hideimportant");a.focus()});y(a,"blur",function(){""==l(a.value)&&(z(a,"hideimportant"),G(b,"hideimportant"))});g&&(a.value="",z(a,"hideimportant"),G(b,"hideimportant"));
+try{a.focus(),a.blur()}catch(h){}}}function Ib(a,g,b){var c=e.createElement(a);"script"===a?(c.type="text/script",c.src=g,e.body.appendChild(c)):(c.rel="stylesheet",c.type="text/css",c.href=g,"v3"===b?e.getElementsByTagName("head")[0].appendChild(c):(a=e.getElementsByTagName("script").length,a=e.getElementsByTagName("script")[a-1],a.parentNode.insertBefore(c,a)))}function $a(a){this.key=a||"account.xiaomi.com"}function Jb(a){if("object"!==typeof a)return a;var b=[],c;for(c in a)b.push(c+"="+encodeURIComponent(a[c]));
+return b.join("&")}function ab(a){this.id=Kb++;for(var b in a)a.hasOwnProperty(b)&&(this[b]=a[b]);this.xhr=new (c.XMLHttpRequest||c.ActiveXObject)("Microsoft.XMLHTTP");this.request()}function La(a){a=a||{};var b=Lb,c={},B;for(B in b)B in c||B in a||(a[B]=b[B]);this.opt=a;this.init()}function Mb(a){pa.on(function(b,c){a.style.height=Math.max(b.height,c.height)+"px";a.style.width=c.width+"px"});pa.onbeforeResize(function(){a.style.height="auto";a.style.width="100%"})}function qa(a,g){N({biz:"loginQr",
+type:h.tickType,step:0});var c=$(b.layout,"height"),B=$(b.layout,"width");b.qrIframe.height=h.qrsize;b.qrIframe.width=h.qrsize;b.loginQr.style.height=c+"px";b.loginQr.style.width=B+"px";var B=b.qrIframe,e=h.qrsize,d="",f=JSP_VAR;s("callback")&&s("sid")&&(f=location.search);if("object"===typeof f){for(var k in f)f.hasOwnProperty(k)&&f[k]&&(d+="&"+k+"="+encodeURIComponent(f[k]));d="?"+d.substring(1)}else d=f;B.src="/pass/lp"+d+"&_qrsize="+e;"tab"===g?b.loginQr.style.height=c-82+"px":x(b.loginMain);
+A(b.loginQr,!0);!0===a&&z(b.body,"only_qrlogin");return!1}function za(a){b.qrIframe.src="about:blank";x(b.loginQr);A(b.loginMain,!0);!0===a&&z(b.body,"only_pwdlogin");return!1}function Nb(a){var b=bb(a),c=cb[a],B="";b&&c&&(B=K('<a href="{url}" class="btnadpt btn_{type} sns-login-link" title="{text}" data-type="{type}">                       <i class="btn_sns_icontype icon_default_{type}"></i><span>{text}</span>                     </a>',{url:b,type:a,text:c}));return B}function ra(a,b,c){a=f("input",
+a);for(var B=0;B<a.length;B++){var e=a[B],d=e.name;if(""===d||"none"===e.style.display&&d!==c||d===b)a.splice(B,1),B--}return a}function Ob(a,g,c,B){g=l(g);if("user"===a){if(g!==k.maskedPhone)return"tel"===c?/^\d{6,}$/.test(g):!1===Ma(g)?!1:!0}else if("password"===a){if("number"===c||"tel"===c)return/^\d{4,6}$/.test(g);if(J(B,"set-password"))return!(8>g.length||16<g.length||/^\d+$/.test(g)||/^[A-Za-z]+$/.test(g)||/^[^A-Za-z0-9]+$/.test(g))}else{if("captCode"===a)return/^\w{4,8}$/.test(g);if("repassword"===
+a)return g===b.rePwd.value}return!0}function Na(a,g,c){a=ra(a,g);g=0;for(var B={},e=0;e<a.length;e++){var d=a[e],f=d.name,h=d.value,k=d._type||d.type;"password"!==f&&"repassword"!==f&&"visiablepwd"!==f&&(h=l(h));""===h?(L.show(f+"_"+k+"_empty",d),g++):Ob(f,h,k,d)?B[f]="user"===f&&"+86"!==l(b.codeValue.innerHTML)?l(b.codeValue.innerHTML)+h:h:(L.show(f+"_"+k+"_rule",d),g++);if(g)break}return c?c(g?!1:B):!g}function ea(a){a=ra(a);for(var b=0;b<a.length;b++)L.clean(a[b])}function db(a){a=ra(a);for(var g=
+0;g<a.length;g++){var c=a[g];c.value="";h.captchaInit&&"captCode"===c.name&&sa(b.captchaImg)}}function eb(){var a=f(".form-panel",b.layout);w(a,function(a,b){x(a)})}function da(a,b){if(!h.supportPlaceholder){var c=e.createElement("span"),B=a.parentNode,d=a.getAttribute("placeholder");c.className="placehld";c.id=a.id+"_pla";c.innerHTML=d;B.insertBefore(c,a);B.style.position="relative";c.style.position="absolute";c.style.cursor="text";c.style.lineHeight=$(a,"lineHeight")||1.2;c.style.left=(a.offsetLeft||
+0)+"px";c.style.top=(a.offsetTop||0)+"px";b&&(c.style.color=b);fa.on(a,function(a,b){""===a?A(c):x(c)});y(c,D.click,function(){try{a.focus(),x(c)}catch(b){}})}}function fb(a){if(!h.supportPlaceholder){var b=a.parentNode;a=e.getElementById(a.id+"_pla");try{b.removeChild(a)}catch(c){}}}function Aa(a){v.add("objectCopy",a);var b={},c,e={};for(c in a)c in a&&!(c in e)&&(b[c]=a[c]);return b}function Pb(a){y(a,D.focus,function(){gb(a)});y(a,D.blur,function(){clearTimeout(a.__checkInputTC)})}function gb(a){var b=
+a.value,c="__oldVal"in a?a.__oldVal:a.__oldVal=b,e=a._inputChangeFns,d;if(b!==c)for(var f=0;f<e.length;f++)"function"===typeof e[f]&&!1===e[f].call(a,b,c,a.__reset)&&(d=!1);!1!==d&&(a.__oldVal=b);a.__reset&&(a.__reset=!1);a.__checkInputTC=setTimeout(function(){gb(a)},50)}function Ma(a){return{miid:/^\d{3,}$/.test(a),phoneLike:/^\d{6,}$/.test(a),phone:/^\++\d{6,}$/.test(a)||/^0{2}\d{6,}/.test(a),emailLike:-1!==(a+"").indexOf("@"),email:/^[\w.\-]+@(?:[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*\.)+[A-Za-z]{2,6}$/.test(a),
+nonum:/[^0-9]/.test(a)}}function hb(a,b){H("userName",a,-3650,"/",".xiaomi.com",31536E4);var c=parseInt(a,10)===b?b:b+"|"+a;LStore.set("user",c)}function sa(a,g){g=g||h.captChaURL;a.src=g+"&"+(new Date).getTime();b.captchaCode&&(b.captchaCode.__reset=!0)&&(b.captchaCode.value="");z(b.layout,"captcha_layout")}function ib(a){h.captchaInit=1;b.captcha.innerHTML=h.captchaTpl;b.captchaCode=f("#captcha-code");b.captchaImg=f("#captcha-img");da(b.captchaCode);y(b.captchaImg,D.click,function(){clearTimeout(b.captchaImg.__refreshImg);
+b.captchaImg.__refreshImg=setTimeout(function(){sa(b.captchaImg)},100)});fa.on(b.captchaCode,function(a,c,e){!e&&ea(b.mainForm)})}function jb(a){h.captchaInit&&sa(b.captchaImg);b.captchaCode&&L.clean(b.captchaCode);L.show(k.verifyPwd?E.PWD_RES_ERROR:E.LOGIN_RES_ERROR,b.userName)}function Oa(a){a.ignore?L.show(E.password_number_rule):L.show(E.password_number_rule,b.pwd)}function kb(){L.show(E.TOKEN_EXPIRE)}function lb(a){L.show(E.FORBIDDEN)}function mb(a){L.show(E.INTERNAL_ERROR)}function Qb(a){for(var g=
+"",c=0;10>c;){g=decodeURIComponent(a);if(a===g)break;a=g;c++}a=C(a);a=a.replace(/\$\{(.*)\}\$/g,function(a,b,g){return'<span class="strong-color" style="color:#ff7e00">'+b+"</span>"});b.header.innerHTML=a}function Rb(){var a;a="<div class='search-code'><i class='icon_search'></i><input type='text' class='search-code-input'></div>"+RegionsCode.getAll({usual:E.POPULAR},!0,!0);b.codeContainerCon.innerHTML=a;b.searchCodeInput=f(".search-code-input",b.codeContainer)[0];b.recordCode=f(".record-country",
+b.codeContainer);b.usual=f(".countrycode-container-usual",b.codeContainer)[0];b.usualRecord=f(".record",b.usual);var g="";w(b.usualRecord,function(a,b){Math.random();for(var c=nb();c===g;)c=nb();g=c;z(a,"code_style"+c)});fa.on(b.searchCodeInput,function(a,g){a=l(a);if(0<a.length){z(b.codeContainer,"search-mode");var c=RegionsCode.searchLikeData(a)}else return G(b.codeContainer,"search-mode"),!1;w(b.recordCode,function(a){var b=l(a.getAttribute("data-brief"));if(J(a.parentNode.parentNode.parentNode,
+"countrycode-container-usual"))return!1;a:{for(var g=c,g=g||[],e=0,d;d=g[e++];)if(b===d.B){b=!0;break a}b=!1}b?z(a.parentNode,"selected"):G(a.parentNode,"selected")})});y(b.searchCodeInput,D.keydown,function(a){a=a||c.event;if(13==(a.charCode||a.keyCode)){var g=f(".selected",b.codeContainer)[0];g&&V(g,"click");a.returnValue=!1;a.preventDefault&&a.preventDefault()}"cancelBubble"in a&&(a.cancelBubble=!0);"stopPropagation"in a&&a.stopPropagation()})}function nb(){var a=Math.random();return Math.ceil(a*
+Sb)}function ga(){b.searchCodeInput&&(b.searchCodeInput.value="");G(b.codeContainer,"search-mode");x(b.codeContainer);k.codeShown=!1}function ob(a){var g=f(".record-country",a)[0];a=g.getAttribute("data-code");g=g.getAttribute("data-brief");b.codeValue.innerHTML=a;h.region=g;v.add("selectCode",a,g)}function Tb(a){w(f("a",b.navTabs),function(b,c){b.getAttribute("data-tab")===a?z(b,"now"):G(b,"now")});w(b.tabsCon,function(b,c){b.getAttribute("data-con")===a?A(b,!0):x(b)});"qr"===a?(z(b.loginQr,"tab_qr_area"),
+qa(!0,"tab")):za(!0)}function pb(a){G(b.regionCode,"disable");l(b.userName.value)||(k.manualControlCode=!1,k.showCodeValue=!1);a.phoneLike&&!a.phone&&(k.manualControlCode?(G(b.regionCode,"add_regioncode"),k.showCodeValue=!1,ga()):(z(b.regionCode,"add_regioncode"),k.showCodeValue=!0));if(!l(b.userName.value)||a.nonum)G(b.regionCode,"add_regioncode"),ga(),k.manualControlCode||(k.manualControlCode=!1,k.showCodeValue=!1);v.add("showCodeValue",k.showCodeValue)}function Pa(a){if(1===k.registerPwd)return Ba("setPwd"),
+!1;qb({noPwd:!0},a)}function qb(a,b){if(k.lockSubmit)return!1;var c=I(ha,a);k.clientAcq?c.phoneHash=X.hash||"":c.phone=Ca.phone;c.region=h.region;b&&(c=I(c,b));Ajax({url:"/pass/tokenRegister",method:"POST",data:c,success:function(a){k.lockSubmit=0;v.add("resisterResult",a);a=m(a.replace("&&&START&&&",""));var b=a.code;if(0===b)N({biz:"loginRegister",type:h.tickType,step:"end"}),k.clientAcq&&(X.resetCookie(),k.clientAcq=!1),location.href="/pass/serviceLogin"+decodeURIComponent(c.qs);else if(a.ignore=
+!0,b in O)O[b](a);else O.regFail(a)},error:function(a){v.add("registerError",a.status,a.responseText);k.lockSubmit=0},timeout:function(){v.add("registerTimeout",(new Date).getTime());k.lockSubmit=0}});k.lockSubmit=1}function Da(a,b,c){var e="ticket"!==s("_loginSign")?"pwd":"ticket";v.add("login",a,b);e!==k.loginType?(d("userId","/","account.xiaomi.com"),d("userId","/","xiaomi.com"),d("cUserId","/","account.xiaomi.com"),d("cUserId","/","xiaomi.com"),e=Aa(ha),e._sign="",e._loginSign=k.loginType,e._json=
+!0,c&&(e=I(e,c)),Ajax({url:"/pass/serviceLogin",method:"GET",data:e,success:function(c){v.add("loginSign",c);c=m(c);0!==c.code?(b._sign=c._sign,b.qs=c.qs,b.callback=c.callback,rb(a,b)):(N({biz:"login",type:h.tickType,step:"end"}),location.href=c.location)}})):rb(a,b,c)}function rb(a,b,c){if(k.lockSubmit)return!1;c&&(b=I(b,c));Ajax({url:a,method:"POST",data:b,success:function(a){k.lockSubmit=0;v.add("loginResult",a);a=m(a);var c=a.code,e="";if(b.user)var d=b.user,e=d.replace(d.substring(3,d.length-
+3),"***");v.add("loginCode",c);if(c in O)O[c](a,d,e);else O["default"](a,d)},error:function(a){v.add("loginError",a.status,a.responseText);a=a.status;var c=b.user;a in O?0===a?(v.add("loginsErrorStatus","in"),O.network({},c)):(v.add("loginsErrorStatus","out"),O[a]({},c)):(v.add("loginsErrorStatus","fail"),O.fail({},c));k.lockSubmit=0},timeout:function(){v.add("loginTimeout",(new Date).getTime());k.lockSubmit=0}});k.lockSubmit=1}function Ub(){Ajax({url:"/pass/ip/next",method:"GET",success:function(a){v.add("ipAddress",
+a);a=m(a);if(0===a.code&&!0===a.data.hasNextUrl){var b=e.createElement("img");b.src=a.data.url;e.body.appendChild(b);setTimeout(function(){e.body.removeChild(b)},5E3)}}})}function Vb(){sb(Y["ticket-login"].sendData)}function sb(a){var b=k.clientAcq?a.userHash:a.user;(ma=Qa[b])||(ma=Qa[b]={left:5,times:0});ma.initQuota?tb(a):Wb(b,function(b){ma.left=b;ma.initQuota=1;tb(a)})}function tb(a){var b=Qa[k.clientAcq?a.userHash:a.user];0===b.left?Ra(b.left):b.sending?ub(b,!0):(b.sending=!0,Ajax({url:"/pass/sendServiceLoginTicket",
+method:"post",data:a,dataType:"text",success:function(a){v.add("sendServiceLoginTicket",a);b.sending=!1;var c={};try{c=m(a.replace("&&&START&&&",""))}catch(e){}a=c.code;0===a?(N({biz:"login",type:h.tickType,step:"sendPhoneTicketSuccess"}),b.left=Math.max(b.left-1,0),b.hold=(b.times+=1)*Xb,ub(b)):a in O?(c.send=b,O[a](c)):O.fail(c)},error:function(){b.sending=!1;na(E.send_again,!1)}}))}function ub(a,b){Ra(a.left);if(!b){text=E.send_hold;var c=function(){a.hold--;var b=text.replace("{time}","("+a.hold+
+")");1<=a.hold?(na(b,!0),Sa=setTimeout(function(){c()},980)):na(E.send_again,!1)};clearTimeout(Sa);c()}}function na(a,c){b[ta].innerHTML=a;c?z(b[ta],"disabled"):G(b[ta],"disabled")}function Wb(a,b){var c={contentType:160033,userId:-1};k.clientAcq?c.addressHash=a:c.address=a;Ajax({url:"/pass/sms/quota",method:"POST",data:c,dataType:"text",success:function(a){var c={};try{c=m(a.replace("&&&START&&&",""))}catch(e){}0===c.result?b(parseInt(c.info)||0):b(0)},error:function(){b(0)}})}function Ra(a){var b=
+E.leftTimesText,c="getSmsCode"===ta?L:acError;2>=a?(b=0===a?E.nochance:K(b,{left:a}),c.show(b)):c.clean()}function Yb(a,c){R=c;R.data.nickname?f(".usernameShow",b[a])[0]&&(f(".usernameShow",b[a])[0].innerText=R.data.nickname):x(f(".us-userName",b[a])[0]);f(".us-portraitUrl",b[a])[0]&&R.data.portrait&&(f(".us-portraitUrl",b[a])[0].innerHTML='<img src="'+R.data.portrait+'">');f(".phoneShow",b[a])[0]&&(f(".phoneShow",b[a])[0].innerText=R.data.phone);f(".useridShow",b[a])[0]&&(f(".useridShow",b[a])[0].innerText=
+R.data.maskedUserId);b.userPhone.innerText=Ca.phone||R.data.phone}function Ba(a,c){eb();c&&Yb(a,c);"setPwd"===a&&w(f("input",b.setPwd),function(a,b){da(a)});h.currentBiz&&h.currentBiz.bizBg&&x(b.bannerIframe);A(b[a],!0);"acConfirm"===a&&(A(b.acConfirmOkBtn),A(b.acConfirmNoBtn));x(f(".n-footer")[0]);k.currentView=a}function Ea(){eb();L.clean();clearTimeout(Sa);na(E.INIT_CODE_TEXT,!1);h.currentBiz&&h.currentBiz.bizBg&&A(b.bannerIframe,!0);A(b.loginMain);k.currentView="loginMain"}function Zb(){if(T.tmpVal)for(var a in T.data)-1!==
+T.tmpVal.indexOf(a)&&(v.add("COMMAND",a),"function"===typeof T.data[a]&&T.data[a](),T.tmpVal="",T.history.push(a))}function Fa(a,c){!0===c&&x(b.changeLoginType);"block"===f(".err_tip",b[k.currentView])[0].style.display&&ea(b.mainForm);b.toggleVisiable.__visiable&&("ticket"===a?(A(b.pwd,!0),x(b.pwdVisiable)):(x(b.pwd),A(b.pwdVisiable)));fb(b.pwd);fb(b.userName);k.loginType=a;k.enableCode="ticket"===k.loginType?aa?!0:!1:h.enableCode;vb();if("pwd"===a){G(b.regionCode,"add_regioncode");G(b.loginPanel,
+"sms_login");x(b.smsCodePanel);b.pwd.value="";b.pwdVisiable.value="";b.userName.setAttribute("_type","text");b.pwd.setAttribute("_type","password");try{b.userName.type="text",b.pwd.type="password"}catch(e){}b.userName.setAttribute("placeholder","邮箱/手机号码/小米ID");b.pwd.setAttribute("placeholder","密码");var d=f(".err_tip",b.loginMain)[0];d.parentNode.insertBefore(b.captcha,d);ia(W.OUTERLINK,!0);d=Ma(b.userName.value,!0);k.enableCode&&pb(d)}else if("ticket"===a){b.userName.value&&!/^\d{6,}$/.test(b.userName.value)&&
+k.maskedPhone!==b.userName.value&&(b.userName.value="",x(b.clearLink));aa||(b.codeValue.innerHTML="+86",z(b.regionCode,"disable"));z(b.loginPanel,"sms_login");z(b.regionCode,"add_regioncode");A(b.smsCodePanel,!0);b.pwd.value="";b.userName.setAttribute("_type","tel");if(/FP2801 Build/i.test(navigator.userAgent))b.pwd.setAttribute("_type","tel"),b.userName.type="tel",b.pwd.type="tel";else{b.pwd.setAttribute("_type","number");try{b.userName.type="tel",b.pwd.type="number"}catch(l){}}b.userName.setAttribute("placeholder",
+E.PHONE_NUM);b.pwd.setAttribute("placeholder",E.SMS_CODE);b.pwd.parentNode.parentNode.insertBefore(b.captcha,b.pwd.parentNode);ia(W.OUTERLINK)}!b.userName.value&&da(b.userName);!b.pwd.value&&da(b.pwd)}function vb(){var a=h.currentBiz&&h.currentBiz.pwdText?h.currentBiz.pwdText:"",c=h.currentBiz&&h.currentBiz.smsText?h.currentBiz.smsText:"";"ticket"===k.loginType?(b.loginButton.value=c?c:"立即登录/注册",b.changeLoginType.innerText=a?a:"用户名密码登录"):(b.loginButton.value=a?a:"登录",
+b.changeLoginType.innerText=c?c:"手机短信登录/注册")}function wb(){var a=Aa(ha);h.captchaNeed&&b.captchaCode&&(a.captCode=l(b.captchaCode.value));if("pwd"===k.loginType){var c=k.showCodeValue?l(b.codeValue.innerHTML)+l(b.userName.value):l(b.userName.value),e=f("#XiaomiEdit")||f("#npXiaomiEdit"),e=e&&e.GetValue()||b.pwd.value;k.clientAcq&&k.maskedPhone===c?a.userHash=X.hash:a.user=c;a.hash=(CryptoJS.MD5(e).toString()+"").toUpperCase();!h.md5pwd&&(a.pwd=e);a.cc=b.codeValue.innerHTML;Da("/pass/serviceLoginAuth2",
+a)}else if("ticket"===k.loginType){var d="+86"===l(b.codeValue.innerHTML)?l(b.userName.value):l(b.codeValue.innerHTML)+l(b.userName.value),c=b.pwd.value;if(k.clientAcq&&k.maskedPhone===d)return a.userHash=X.hash,a.ticket=c,Da("/pass/serviceLoginTicketAuth",a),!1;Ca.phone=d;Ajax({url:"/pass/phoneInfo",method:"POST",data:{user:d,ticket:c,sid:ha.sid},success:function(b){v.add("phoneInfo",b);R=b=m(b);var c=b.code;if(0===c)switch(k.registerPwd=b.data.registerPwd,b.data.status){case 1:N({biz:"loginNotSureRecycle",
+type:h.tickType,step:2});Ba("acConfirm",b);break;case 2:a.user=d;Da("/pass/serviceLoginTicketAuth",a);break;case 0:Pa()}else if(c in O)O[c](b);else O.fail(b)}})}return!1}var Ta=c.MiLogin||(c.MiLogin={}),$b=function(){var a=location.hostname;return-1<a.indexOf("onebox")?"onebox":-1<a.indexOf("preview")?"preview":"release"}(),v=function(){var a=[];return{add:function(b,e,d){a.push({title:b,message:e,more:d,time:r(new Date)});-1!==(location.search+"").indexOf("debug")&&"console"in c&&"function"===typeof c.console.log&&
+console.log(arguments)},get:function(){return a}}}(),N=function(){var a={},b=[],c="",e=null,d=0,f=function(){var b=a[c];b&&b.callback&&b.callback();c="";clearTimeout(e);e=null;h()},h=function(){if(!e){var d=b.shift();if(d){c=d;var d=p(a[d].data),k=new Image;k.onload=k.oncomplete=k.onerror=f;k.src="/pass/ajax/tick?"+d;e=setTimeout(function(){e=null;h()},1E3)}}};return function(c,e){c._t=(new Date).getTime();key="sendStatus-"+d++;c={key:key,data:c,callback:e};v.add(key,c);a[key]=c;b.push(key);h()}}(),
+ja=function(){var a=navigator.userAgent,b={};/\s+chrome\/([\d\.]*)/i.test(a)?(b.name="Chrome",b.version=parseInt(RegExp.$1)):/msie\s+(\d+\.\d+)/i.test(a)?(b.name="IE",b.version=parseFloat(RegExp.$1)):/\s+firefox\/([\d\.]*)/i.test(a)?(b.name="Firefox",b.version=parseInt(RegExp.$1)):/applewebKit\/([\d\.]*)/i.test(a)?(b.name="Webkit",b.version=parseInt(RegExp.$1),/miuibrowser\/([\d\.]*)/i.test(a)&&(b.name="MIUI Browser",b.version=parseInt(RegExp.$1)),/version\/([\d\.]*)\s+Safari/i.test(a)&&(b.name="Safari",
+b.version=parseInt(RegExp.$1))):/trident\/([\d\.]*)/i.test(a)?(a=a.match(/rv:([\d\.]*)/))&&2<=a.length?(b.name="IE",b.version=parseFloat(a[1])):(b.name="Trident",b.version=RegExp.$1):(b.name=a,b.version=0);return b}(),xb=function(){var a=e.createElement("a");a.target="_blank";e.body.appendChild(a);var b=0,d=null;return function(f,h){if("_self"===h)location.href=f;else{a.href=f;var k=(new Date).getTime();if(!(d===f&&1E3>k-b)){d=f;b=k;try{var l=e.createEvent("MouseEvents");l.initMouseEvent("click",
+!0,!0,c);a.dispatchEvent(l)}catch(m){a.click()}}}}}();try{var Ua=!!c.localStorage}catch(Dc){Ua=!1}$a.prototype={key:"account.xiaomi.com",_read:Ua?function(){var a="";try{a=c.localStorage.getItem(this.key)}catch(b){}a=(new Function("","return "+a))();return"object"==typeof a&&a?a:{}}:function(){return{}},_save:Ua?function(a){try{c.localStorage.setItem(this.key,n(a))}catch(b){v.add("setItem \u629b\u51fa\u5f02\u5e38",ja.name+" "+ja.version)}}:function(){return!1},_readAndGc:function(a){var b=this._read(),
+c;for(c in b){var e=b[c];e.expires&&(new Date).getTime()-e.time>=e.expires&&delete b[c]}this._save(b);return a?b[a]:b},remove:function(a){var b=this._readAndGc();delete b[a];this._save(b)},get:function(a){a=this._readAndGc(a)||{};return a.value?a.value:null},set:function(a,b,c){if(!a)return!1;var e=this._readAndGc(),d=(new Date).getTime();e[a]={value:b,expires:c,time:d};this._save(e)}};c.LStore=new $a("account.xiaomi.com");var Kb=0;ab.prototype={request:function(){var a=this.url||"?",b=this.data||
+{},e=(this.method||"GET").toUpperCase(),d=this;this.xhr.onreadystatechange=function(){d.state=d.xhr.readyState;v.add("xhrReadyState",d.xhr.readyState);4==d.xhr.readyState&&(c.clearTimeout(d.timeouthandler),d.status=d.xhr.status,v.add("xhrStatus",d.status),200==d.xhr.status?d.success&&d.success(d.xhr.responseText,d.xhr):(v.add("xhrError"),d.error&&d.error(d.xhr)))};b=Jb(b);"GET"==e?(a=-1===a.indexOf("?")?a+("?"+b+"&_dc="+(new Date).getTime()):a+("&"+b+"&_dc="+(new Date).getTime()),b=null):a+="?_dc="+
+(new Date).getTime();v.add("initopen");this.xhr.open(e,a,!0);this.xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");this.timeouthandler=c.setTimeout(function(){v.add("intoTimeout");d.timeout()},5E3);v.add("initsend");this.xhr.send(b)},timeout:function(){}};c.Ajax=function(a){return new ab(a)};var pa={fns:[],beforeFns:[],inited:!1,on:function(a){"function"===typeof a&&this.fns.push(a);!this.inited&&this.init();c.onresize&&c.onresize()},off:function(a){if("function"===typeof a)for(var b=
+0,c=this.fns.length;b<c;b++)if(a===this.fns[b])return this.fns.splice(b,1),!0;return!1},onbeforeResize:function(a){"function"===typeof a&&this.beforeFns.push(a)},beforeExec:function(){for(var a=0,b;b=this.beforeFns[a++];)b&&b.call(c)},exec:function(){this.beforeExec();var a;a=c.innerWidth||0;var b=c.innerHeight||0;a||("CSS1Compat"==e.compatMode?(a=e.documentElement.clientWidth,b=e.documentElement.clientHeight):(a=e.body.clientWidth,b=e.body.clientHeight));a={width:a,height:b};for(var b=e.documentElement,
+d=e.body,f=Math.max(b.clientHeight||0,d.scrollHeight,b.scrollHeight||0,d.offsetHeight,b.offsetHeight||0),b={width:Math.max(b.clientWidth||0,d.scrollWidth,b.scrollWidth||0,d.offsetWidth,b.offsetWidth||0),height:f},d=e.documentElement,f=e.body,d={scleft:Math.max(d.scrollLeft||0,f.scrollLeft),sctop:Math.max(d.scrollTop||0,f.scrollTop)},f=0,h;h=this.fns[f++];)h&&h.call(c,a,b,d)},init:function(){var a=null,b=this;c.onresize=function(){c.clearTimeout(a);a=c.setTimeout(function(){b.exec()},60)}},triggle:function(){this.exec()}},
+Va={},S=null,Ga=e.body,Lb={title:"{Modal-DefTitle}",cls:"",titleCls:"",bodyCls:"",html:"",afterRender:function(){}},ac=function(){var a=0;return function(){return"modal-id-"+a++}}();La.prototype={init:function(){var a=this.opt;S||(a.renderTo?S=a.renderTo:(S=e.createElement("div"),z(S,"modal_container"),S.innerHTML='<div class="modal_msk"></div>',Ga.appendChild(S),!a.modalfixed&&Mb(S)));this.id=a.id||ac();var b=this.modal=Va[this.id],d=this;b||(b=this.modal=e.createElement("div"),z(b,"modal_tip"),
+this.hide(),b.id=this.id,b.innerHTML='<div class="modal_tip_flex"><div class="modal_tip_hd modal-header"><div class="external_logo_area"><a class="milogo" href="javascript:void(0)"></a></div><div class="modal-header-text modal_tip_title"></div><a href="javascript:void(0)" title="" class="modal-header-close btn_mod_close"><span>关闭</span></a></div><div class="modal_tip_bd modal-body"></div></div>',a.renderTo?a.renderTo.appendChild(b):S.appendChild(b),this.header=f(".modal-header",b)[0],this.title=
+f(".modal-header-text",b)[0],this.body=f(".modal-body",b)[0],this.closeBtn=f(".modal-header-close",b)[0],y(this.closeBtn,"click",function(){d.close()}),this.render(a),Va[this.id]=b,this.resizeModal=function(d,e,f){e=b;var h="getComputedStyle"in c?c.getComputedStyle(e):e.currentStyle;e={width:Math.max(parseInt(h.width)||0,e.clientWidth,e.offsetWidth),height:Math.max(parseInt(h.height)||0,e.clientHeight,e.offsetHeight)};h=d.height;d=d.width;var k=f.sctop;f=f.scleft;a.deviceType&&"mobile"===a.deviceType||
+(e&&e.height&&(b.style.marginTop=e.height<h?(h-e.height)/2+"px":0+k+"px",b.style.top=0),e&&e.width&&(b.style.marginLeft=e.width<d?(d-e.width)/2+"px":0+f+"px",b.style.left=0))},a.modalfixed&&(this.resizeModal=function(){}),!a.renderTo&&pa.on(this.resizeModal));this.show()},show:function(){if(this.modal&&(A(S,"hide"),A(this.modal,"hide"),!this.opt.renderTo)){var a=this;setTimeout(function(){!a.opt.modalfixed&&pa.triggle()},200)}},beforeClose:function(){if(this.opt.beforeClose)return this.opt.beforeClose.call(this)},
+close:function(a){if(this.modal){if(!1===this.beforeClose())return 0;a?(pa.off(this.resizeModal),S.removeChild(this.modal),this.modal=null,Va[this.id]=null,x(S,"hide")):this.hide()}},hide:function(){x(S,"hide");x(this.modal,"hide")},render:function(a){this.title.innerHTML=a.title;this.body.innerHTML=a.html;a.titleCls&&z(this.title,a.titleCls);a.bodyCls&&z(this.body,a.bodyCls);a.cls&&z(this.modal,a.cls);a.afterRender.call(this)},update:function(a,b){b&&(a.titleCls&&G(this.title,a.titleCls),a.bodyCls&&
+G(this.body,a.bodyCls),a.cls&&G(this.modal,a.cls));this.render(a)}};c.Modal=La;var Wa;(function(){Wa=new La({title:"提示",cls:"mod_acc_tip security-controller-modal",html:'<div id="sect-controller-panel" class="security_controller_panel"><h4>您需要安装安全控件，才可使用安全登录。</h4><p>控件可对您的密码进行加密保护，提升账户安全性。</p><p>请点击“立即安装控件”按钮，并根据提示进行安装。</p><div class="tip_msg">完成安装后，请重新启动浏览器</div></div><div class="tip_btns"><a title="立即安装控件" href="https://account.xiaomi.com/static/res/0369340/account-static/static/mipay/XiaomiCtrl.exe" class="btn_tip btn_commom btn-action-controller">立即安装控件</a></div>',
+customDevice640:!0,modalfixed:!0,afterRender:function(){}});Wa.close()})();var Xa=[{verifyList:{name:"mistore",deviceType:"PC"},src:"https://s1.mi.com/loginbanner.html",qrName:"使用<span>小米商城APP</span>扫一扫"},{verifyList:{name:"scfPortal",deviceType:"PC"},src:"https://scf.mi.com/loginbanner.html"},{verifyList:{name:"mihomeMember",deviceType:"weixin"},src:"https://wx.men.mi.com/member/loginbanner.html",smsText:"短信登录",pwdText:"密码登录",bizBg:!0,errorBrdNone:!0,snsDefaultHide:!0},{verifyList:{name:"miotstore",
+deviceType:"mobile"},title:"欢迎登录小米有品"},{verifyList:{name:"test",deviceType:"mobile"},src:"https://wx.men.mi.com/member/loginbanner.html",title:"业务定制标题（不建议定制）"},{verifyList:{name:"test",deviceType:"PC"},src:"https://static.account.xiaomi.com/uiTheme/html/loginbanner.html"}],aa=JSP_VAR.dataCenterZone&&"China"!=JSP_VAR.dataCenterZone,ka=JSP_VAR.loginMethods,bc=0===JSP_VAR.locale.indexOf("zh")?"zh_CN"===JSP_VAR.locale?"zh_CN":"zh_TW":0===JSP_VAR.locale.indexOf("en_")?"en":JSP_VAR.locale,
+cc=JSP_VAR.dataCenterZone,dc=JSP_VAR.deviceType,ec="mobile"===JSP_VAR.deviceType?"wap":"web",fc=function(){var a=s("_qrsize");return parseInt(a)||270}(),gc=function(){var a="";JSP_VAR.dataCenterZone&&"India"===JSP_VAR.dataCenterZone&&(a="ticket");var a=s("_loginType")||a,b="all pwd qr ticket pwdonly ticketonly".split(" "),c=parseInt(a)||0;return ba(b,a)?a:b[c]||"all"}(),hc=JSP_VAR.region,ic=aa?"小米公司版权所有":"小米公司版权所有-京ICP备10046444-<a class='beian-record-link' target='_blank'><span></span>京公网安备11010802020134号</a>-京ICP证110507号",jc="PC"!==JSP_VAR.deviceType,kc=!aa,lc=JSP_VAR.privacyLink,mc=JSP_VAR.isPreview||
+location.href.indexOf("_debugMode")?100:_t_.samplingRate,nc=_t_.samplingBase,oc="placeholder"in e.createElement("input"),pc=LStore.get("loginNeedCode"),qc="PC"!==JSP_VAR.deviceType,rc=function(){var a=!(!aa&&"zh_CN"===JSP_VAR.locale),b=navigator.userAgent;w(["Windows CE","MSIE 7.0; Windows Phone OS 7.0","MSIE 6.0; Windows NT 5.1"],function(c,d){-1!==b.indexOf(c)&&(a=!1)});return a}(),sc=function(){var a=aa?["facebook"]:["qq","weibo","alipay","weixin"];if(aa)/(PassportSDK)|(OAuthSDK)|(OAuthMIUI)/ig.test(navigator.userAgent)||
+a.push("google");else if("mobile"===JSP_VAR.deviceType&&!/MQQBrowser|UCBrowser|[^mobile] safari/gi.test(navigator.userAgent))for(var b in a)"weixin"===a[b]&&a.splice(b,1);return a}(),tc=function(){var a="qq weibo alipay weixin facebook google".split(" "),b="";/micromessenger/i.test(navigator.userAgent)&&(b="weixin");s("_snsdefault")&&ba(a,s("_snsdefault"))&&(b=s("_snsdefault"));return b}(),uc=function(){var a="";s("_snsNone")&&(a=s("_snsNone"));return a}();/passportsdk\/(notificationwebview|PassportHybridView)/i.test(navigator.userAgent)&&
+z(e.body,"sys_wv");var h={locale:bc,dataCenterZone:cc,deviceType:dc,tickType:ec,uiThemePath:"https://static.account.xiaomi.com/uiTheme/css/",md5pwd:!0,infoUrl:"/pass/js/info?type=notice",logoWidth:50,qrsize:fc,loginType:gc,region:hc,copyRight:ic,copyRightHide:jc,getPhoneOn:!1,enableSMS:kc,privacyLink:lc,samplingRate:mc,samplingBase:nc,supportPlaceholder:oc,captchaNeed:pc,twoStepURL:"/pass/2StepLogin/login",enableVisiablePwd:qc,enableCode:rc,snsLoginItem:sc,snsDefault:tc,snsNone:uc,ismiui:void 0,default1px_gif:"data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAABAAEAAAICVAEAOw==",
+beianRecordLink:"http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134",beianRecordImg:"https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png",captchaTpl:'<div class="lgncode c_b"><label class="labelbox code_label"><input id="captcha-code" class="code" name="captCode" type="text" placeholder="图片验证码" autocomplete="off"></label><img class="chkcode_img" id="captcha-img" src="about:blank" alt="点击可刷新图片验证码"></div>',captChaURL:"/pass/getCode?icodeType=login",
+cookieUsageTpl:'<i class="warning_white"></i><div class="text_content"><p class="warning_text">请注意！</p><p>本网站使用cookie，用于在您的电脑中储存信息。这些cookie可以使网站正常运行，以及帮助我们改进用户体验。使用本网站，即表示您接受放置这些cookie。</p></div><button class="close_cookie_usage close-cookie-usage"><i class="icon_close"></i><span class="btn-text">同意并关闭提示</span></button>',oauthInitNum:2,oauthTpl:'<div class="oauth_box"><p class="title">登录即同意该应用获得以下权限</p><div class="scope_list"></div><div class="oauth_wrap clearfix"><a href="javascript:;" class="wrap_more fl">更多</a><i class="icon_caret fl"></i></div></div>',
+bizTheme:{bizName:JSP_VAR.theme,bizDeviceType:JSP_VAR.bizDeviceType},useManMachine:"true"===JSP_VAR.useManMachine},vc=h.enableCode,yb;yb=ka&&ka.length&&Ka(ka)?ka[0].toLowerCase():"pwd";var k={lockSubmit:0,codeShown:!1,codeInit:!1,enableCode:vc,loginType:yb,registerPwd:0,clientAcq:!1,maskedPhone:"",currentView:"loginMain",showCustomPage:function(){for(var a={deviceType:h.bizTheme.bizDeviceType,name:h.bizTheme.bizName},b=0;b<Xa.length;b++){var c=Xa[b];if(u(a,c.verifyList))return h.currentBiz=c,!0}return!1}()},
+W={LOGO:1,QRTRIGGER:2,FOOTER:4,SNSDEFAULT:8,SNSLOGIN:16,SMSBTN:256,OUTERLINK:64},Ga=e.body,D={click:"ontap"in e.body?"tap":"click",focus:"focus",blur:"blur",keyup:"keyup",keypress:"keypress",keydown:"keydown"},E={SMS_CODE:"短信验证码",PHONE_NUM:"手机号码",VERIFY_PASSWORD:"需要验证您的密码",VERIFY_PASSWORD_SUBMIT:"验证",user_text_empty:"请输入帐号",user_tel_empty:"请输入手机号",user_text_rule:"用户名不正确",user_tel_rule:"手机号格式不正确",
+password_password_empty:"请输入密码",repassword_password_empty:"请输入确认密码",password_password_rule:"密码长度8~16位，数字、字母、字符至少包含两种",repassword_password_rule:"密码输入不一致",PASSWORD_FORMAT:"密码长度8~16位，数字、字母、字符至少包含两种",visiablepwd_text_empty:"请输入密码",password_number_empty:"请输入短信验证码",password_number_rule:"短信验证码不正确",password_tel_empty:"请输入短信验证码",password_tel_rule:"短信验证码不正确",captCode_text_empty:"请输入图片验证码",captCode_text_rule:"验证码不正确",
+nochance:"您今天已经发送太多短信，请换个时间或改用其他验证方式",send_again:"重新发送",send_hold:"重新发送{time}",leftTimesText:"您今天还能发送{left}条短信",INIT_CODE_TEXT:"获取验证码",Register_Error:"注册失败",TOKEN_EXPIRE:"验证信息已过期，请重试",USER_RES_ERROR:"用户名不正确",PWD_RES_ERROR:"密码不正确",PWD_INPUT_EMPTY:"请输入密码",CODE_INPUT_ERROR:"验证码不正确",CODE_RES_ERROR:"验证码不正确",CONFIRM_ACC_TIP:"注册新帐号后，将无法使用{phone}登录帐号{username}",No_PWD_USER_TIP:"无密码用户请选择短信登录或点击忘记密码来找回密码",LOGIN_RES_ERROR:"用户名或密码不正确",
+TooMuchRegister:"此手机在一段时间内绑定了过多的小米帐号，请换个手机号码试试",REFRESH_IMG_TIP:"点击图片刷新验证码",LOGIN_FORZEN:"此帐号已被冻结，暂时无法登录",POPULAR:"常用",INTERNAL_ERROR:"系统错误",NETWORK_ERROR:"网络超时，请稍后再试",PHONE_INPUT_ERROR:"手机号格式不正确",FORBIDDEN:"您的操作频率过快，请稍后再试。"},cb={qq:"QQ登录",weibo:"微博登录",weixin:"微信登录",alipay:"支付宝登录",facebook:"Facebook登录",google:"Google登录"},b={body:e.body,layout:f("#layout"),footer:f(".n-footer")[0],header:f("#login-title"),
+loginMain:f("#login-main"),loginQr:f("#login-qrcode"),loginButton:f("#login-button"),qrIframe:f("#qriframe"),qrTrigger:f("#qrcode-trigger"),qrClose:f("#qrcode-close"),regionCode:f("#region-code"),codeSelector:f("#countrycode_selector"),codeContainer:f("#countrycode_container"),codeContainerCon:f("#countrycode_container_con"),codeValue:f("#countrycode_value"),manualCode:f("#manual_code"),clearLink:f("#btn-clear-link"),userName:f("#username"),snsLogin:f("#sns-login-links"),pwd:f("#pwd"),outerLink:f(".outer-link"),
+captcha:f("#captcha"),langSelect:f(".lang-select-li"),mainForm:f("#login-main-form"),error:f("#error-outcon"),accountInfo:f("#account-info"),accountAvator:f("#account-avator"),accountAvatorCon:f("#account-avator-con"),accountDisplayname:f("#account-displayname"),snsDefaultCon:f(".sns-default-container")[0],snsLoginCon:f(".sns-login-container")[0],recordLink:f(".beian-record-link")[0],pwdVisiable:h.enableVisiablePwd&&f("#visiablePwd"),toggleVisiable:f(".pwd-visiable")[0],pwdEye:f(".pwd-eye"),msgPrivacy:f("#msg-privacy"),
+securityControllerPanel:f(".security_Controller")[0],securityController:f("#trustSecurityController"),navTabs:f("#nav-tabs"),tabsCon:f(".tabs-con"),copyRight:f(".nf-intro")[0],bannerIframe:f("#bgiframe"),customQrName:f("#custom-qr-name"),loginPanel:f(".login-panel")[0],smsCodePanel:f("#sms-code-panel"),phone:f("#phoneNum"),smsCode:f("#ticket"),getSmsCode:f("#getSMSCode"),changeLoginType:f("#ChangeLoginType"),acBox:f(".ac-box")[0],acRegister:f("#ac-register"),acConfirm:f("#ac-confirm"),loadingMask:f("#loadingMask"),
+acqTipsMain:f(".acq_tips")[0],setPwd:f("#set-pwd"),registerButton:f("#register-button"),rePwd:f(".re-password")[0],userPhone:f(".user-phone")[0]};b.acRegisterOkBtn=f(".ok_btn",b.acRegister)[0];b.acRegisterNoBtn=f(".no_btn",b.acRegister)[0];b.agreeCheckBox=f(".icon_select",b.acRegister)[0];b.acqTipsReg=f(".acq_tips",b.acRegister)[0];b.agreeLink=f(".agreement_link",b.acRegister)[0];b.privacyLink=f(".privacy_link",b.acRegister)[0];b.acConfirmOkBtn=f(".ok_btn",b.acConfirm)[0];b.acConfirmNoBtn=f(".no_btn",
+b.acConfirm)[0];b.acqTipsConf=f(".acq_tips",b.acConfirm)[0];b.acConfirmBackBtn=f(".back_btn",b.acConfirm)[0];b.setPwdInput=f("input",b.setPwd);var ha={_json:"true",callback:JSP_VAR.callback,sid:JSP_VAR.sid,qs:JSP_VAR.qs,_sign:JSP_VAR._sign,serviceParam:JSP_VAR.serviceParam},Ca={phone:""},R={},O={0:function(a,b,c){k.clientAcq&&(X.resetCookie(),k.clientAcq=!1);v.add("loginPost","success",a);LStore.remove("loginNeedCode");v.add("securityStatus",a.securityStatus);0===(a.securityStatus||0)?(N({biz:"login",
+type:h.tickType,step:"end"}),hb(c,a.userId),href=a.location):(N({biz:"login",type:h.tickType,step:"endIdentity"}),href=a.notificationUrl);v.add("href",href);location.href=href},81003:function(a,b,c){v.add("loginPost","step2",a);LStore.remove("loginNeedCode");hb(c,a.userId);c=Aa(ha);c.user=encodeURIComponent(b);a.qs?c.qs=encodeURIComponent(a.qs):delete c.qs;a.userId&&(c.userId=encodeURIComponent(a.userId));a.phone&&(c.phoneHint=encodeURIComponent(a.phone));a.backupPhone&&(c.backupPhone=encodeURIComponent(a.backupPhone));
+c._sign=encodeURIComponent(a._sign);c.callback=encodeURIComponent(a.callback);c.sid=encodeURIComponent(a.sid);c.app=!0;a=["_locale","_customDisplay","lsrp_appName","mini"];b=0;for(var d,e;d=a[b++];)(e=s(d))&&(c[d]=encodeURIComponent(e));v.add("twoStepLogin","queryObj",c);c=h.twoStepURL+"?"+p(c);location.href=c},70016:jb,20003:function(){L.show(E.USER_RES_ERROR,b.userName)},87001:function(a,c){N({biz:"login",type:h.tickType,step:"captchaError"});if(Y[k.loginType+"-login"])Y[k.loginType+"-login"].start({activeVerify:!0});
+else{var d=!0;h.captchaNeed||(h.captchaNeed=1,LStore.set("loginNeedCode","1",9E5));h.captchaInit||(d=!1,ib(a.captchaUrl));sa(b.captchaImg,a.captchaUrl);d&&L.show(E.CODE_RES_ERROR,b.captchaCode);a.send&&na(E.send_again,!1)}},350008:function(a){L.show(E.LOGIN_FORZEN,b.userName)},403:lb,fail:mb,10001:mb,100001:lb,network:function(a){L.show(E.NETWORK_ERROR)},"default":jb,21327:kb,21314:kb,70002:function(){L.show(E.No_PWD_USER_TIP)},70014:Oa,10031:Oa,10017:Oa,70008:function(){L.show(E.user_tel_rule,b.userName)},
+70009:function(){L.show(E.user_tel_empty,b.userName)},70022:function(a){a.send&&(Ra(ma.left=0),na(E.send_again,!1))},20023:function(){L.show(E.TooMuchRegister);x(b.acConfirmOkBtn);x(b.acConfirmNoBtn)},regFail:function(){L.show(E.Register_Error)}},Ya={ENTER:13,SHIFT:16,CTRL:17,ALT:18,ESC:27,DEL:46,LEFT:37,UP:38,RIGHT:39,SPACE:32,WIN:91,COMMAND:91,DOWN:40};w("ABCDEFGHIGKLMNOPQRSTUVWXYZ".split(""),function(a,b){Ya[a]=a.charCodeAt()});w("abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIGKLMNOPQRSTUVWXYZ".split(""),
+function(a){a.charCodeAt()});var T={data:{"*#*#284#*#*":function(){var a="";w(v.get(),function(b){try{a+=C(n(b))+"<br/>"}catch(c){a+="stringfy \u51fa\u9519<br>"}});e.write(a);e.close()},"*h":function(){xb("https://static.account.xiaomi.com/html/faq/faqList.html");this["*h"]=null},"-h":function(){xb("https://static.account.xiaomi.com/html/faq/faqList.html");this["-h"]=null},"*#*#pwd#*#*":function(){h.md5pwd=!h.md5pwd}},history:[],tmpVal:""},zb=function(){var a={};y(Ga,D.keydown,function(b){b=b||c.event;
+var d=b.keyCode||b.charCode,e=b.target||b.srcElement,f;d in a&&w(a[d]||[],function(a,b){!1===a.call(e||c)&&(f=!1)});!1===f&&(b.returnValue=!1,b.preventDefault&&b.preventDefault())});return{on:function(b,c){(a[b]||(a[b]=[])).push(c)},off:function(b,c){var d=a[b]||(a[b]=[]);w(d,function(a,b){c===a&&d.splice(b,1)})}}}(),bb=function(){var a="PC"===h.deviceType,b={qq:"100284651",weibo:"2996826273",weixin:a?"wxxmzh":"wxxmh5",alipay:"2088011127562160",facebook:"222161937813280",google:"google"},a=a?"snsapi_login":
+"snsapi_userinfo",c=decodeURIComponent(s("third"));c||(c=encodeURIComponent(JSP_VAR.callback)+"&sid="+JSP_VAR.sid);var d={},e;for(e in b)d[e]="/pass/sns/login/auth?"+["appid="+b[e],"weixin"===e?"scope="+a:"","callback="+c].join("&");return function(a){return a?d[a]:d}}(),wc=function(){for(var a=location.search.substring(1).split("&"),b=0;b<a.length;b++)0===a[b].indexOf("_locale=")&&(a.splice(b,1),b--);return function(b){return"?"+a.join("&")+"&_locale="+b}}(),L=function(){return{show:function(a,c){var d=
+E[a]||a,e=f(".err_tip",b[k.currentView])[0],l=f(".error-con",e)[0];c&&(h.currentBiz&&h.currentBiz.errorBrdNone?G(c.parentNode,"error_bg"):z(c.parentNode,"error_bg"));c&&"captCode"===c.name&&(c.value="");l.innerHTML=d;G(e,"pwd_tip");A(e,!0)},clean:function(a){var c=f(".err_tip",b[k.currentView])[0],d=f(".error-con",c)[0];a&&G(a.parentNode,"error_bg");a&&J(a,"set-password")?(z(c,"pwd_tip"),d.innerHTML=E.PASSWORD_FORMAT):(x(c),d.innerHTML="")}}}(),fa=function(){return{on:function(a,b){var c=a._inputChangeFns;
+c||(c=a._inputChangeFns=[],Pb(a));c.push(b)},off:function(a,b){for(var c=a._inputChnageFns,d=0;d<c.length;d++)b===c[d]&&(c.splice(d,1),d--)}}}(),ia=function(){return function(a,b){if("number"===typeof a)for(var c=0;8>=c;c++){var d=a&1<<c,e=b,h=f("#custom_display_"+d);d&&(e?A(h):x(h))}}}(),Sb=5;_t_.htmlLoadEnd=(new Date).getTime();var Xb=60,Sa=null,Qa={},ma={},ta="getSmsCode";y(b.getSmsCode,"click",function(){N({biz:"login",type:h.tickType,step:"sendPhoneTicket"});if(!J(this,"disabled")){ea(b.mainForm);
+ta="getSmsCode";var a="+86"===l(b.codeValue.innerHTML)?l(b.userName.value):l(b.codeValue.innerHTML)+l(b.userName.value),c={sid:"passport"};Na(b.mainForm,"password",function(b){v.add("getSmsCode",b);b&&!ya(b)&&(c=I(c,b),k.clientAcq&&b.user===k.maskedPhone?(c.userHash=X.hash,b.user&&delete b.user):k.clientAcq=!1,Y["ticket-login"]?(Y["ticket-login"].start({uid:a}),Y["ticket-login"].sendData=c):sb(c))})}});y(b.registerButton,"click",function(){var a=a||c.event;k.currentView="setPwd";Na(b.setPwd,!1,function(a){if(a&&
+!ya(a)){var b={noPwd:!1},b=I(b,a);qb(b)}});"cancelBubble"in a&&(a.cancelBubble=!0);"stopPropagation"in a&&a.stopPropagation()});y(b.acConfirmOkBtn,D.click,function(){if(!J(this,"disabled"))if(N({biz:"loginNotSureRecycle",type:h.tickType,step:"login"}),k.clientAcq)Ea(),Fa("ticket"),b.userName.value=k.maskedPhone;else{var a=Aa(ha);a.user=Ca.phone;Da("/pass/serviceLoginTicketAuth",a,{user:a.user,action:"LOGIN",uRecycle:2})}});y(b.acConfirmNoBtn,D.click,function(){if(!J(this,"disabled")){N({biz:"loginNotSureRecycle",
+type:h.tickType,step:"register"});var a={action:"LOGIN",uRecycle:0},b=E.CONFIRM_ACC_TIP,b=b.replace("{phone}",R.data.phone),b=b.replace("{username}",R.data.maskedUserId);confirm(b)&&Pa(a)}});y(b.acConfirmBackBtn,D.click,function(){Ea();k.clientAcq&&(x(b.acqTipsConf),x(b.acqTipsMain),X.resetCookie(),k.clientAcq=!1);db(b.mainForm)});var X=function(){var a=function(){y(b.acRegisterOkBtn,D.click,function(){J(this,"disabled")||Pa()});y(b.acRegisterNoBtn,D.click,function(){c();k.clientAcq=!1;Ea();x(b.acqTipsMain);
+x(b.acqTipsReg);db(b.mainForm)});y(b.agreeCheckBox,D.click,function(){J(this,"icon_true")?G(this,"icon_true"):z(this,"icon_true");J(this,"icon_true")?G(b.acRegisterOkBtn,"disabled"):z(b.acRegisterOkBtn,"disabled")})},c=function(){H("hash","",-1,"/",".account.xiaomi.com",ua);H("activatorToken","",-1,"/",".account.xiaomi.com",ua);H("operator","",-1,"/",".account.xiaomi.com",ua);H("operatorLink","",-1,"/",".account.xiaomi.com",ua)};return{start:function(){var c=M("hash");""!==c&&""!==M("activatorToken")&&
+Ajax({url:"/pass/phoneInfo",method:"POST",data:{userHash:c,sid:ha.sid},success:function(c){v.add("phoneInfo",c);R=c=m(c);if(0===c.code){k.clientAcq=!0;var d=Base64.decode(M("operator")),e=Base64.decode(M("operatorLink"));b.acqTipsConf.innerHTML=b.acqTipsReg.innerHTML=b.acqTipsMain.innerHTML='<a href="'+e+'">'+d+"</a>";A(b.acqTipsMain);A(b.acqTipsConf);A(b.acqTipsReg);k.maskedPhone=c.data.phone;switch(c.data.status){case 1:Ba("acConfirm",c);break;case 2:Ea();b.userName.value=c.data.phone;break;case 0:a(),
+f(".maskedPhone",b.acRegister)[0].innerText=k.maskedPhone,Ba("acRegister",c)}}}})},resetCookie:c,hash:M("hash")}}(),xc={start:function(a){c.miAccGetTokenHandler=function(a){0===a.code&&((new Image).src=a.url)};(function(a){var b=e.createElement("script");b.src=a;e.body.insertBefore(b,e.body.firstChild)})("https://act.account.xiaomi.com/h5/getAccessToken")}};v.add("JSP_VAR",c.JSP_VAR);v.add("_d_",c._d_);v.add("_t_",c._t_);v.add("bizConfig",Xa);v.add("CONF",h);v.add("STAT",k);v.add("MSG",E);v.add("env",
+$b);v.add("browser",ja);v.add("search",location.search);v.add("=====================================\u5206\u5272\u7ebf==========================","=====================================================================");N({biz:"login",type:h.tickType,step:0});h.getPhoneOn&&xc.start();y(Ga,D.keypress,function(a){a=a||c.event;if(a=a.charCode||a.keyCode)T.tmpVal+=String.fromCharCode(a);clearTimeout(T.tc);T.tc=setTimeout(Zb,50)});if(k.showCustomPage){var Ha=h.bizTheme.bizName,Ab=h.bizTheme.bizDeviceType;
+Ha&&Ab&&Ib("link",h.uiThemePath+Ha+"/login_"+Ha+("PC"===Ab?".css":"_wap.css"));z(b.body,Ha+"_theme");h.currentBiz&&(h.currentBiz.qrName&&(b.customQrName.innerHTML=h.currentBiz.qrName),b.bannerIframe&&h.currentBiz.src&&(b.bannerIframe.src=h.currentBiz.src),h.currentBiz.title&&(b.header.innerHTML=h.currentBiz.title),h.currentBiz.navTitle&&(b.navTabs.innerHTML=h.currentBiz.navTitle),h.currentBiz.snsDefaultHide&&ia(W.SNSDEFAULT));vb()}!s("_noAcq")&&h.enableSMS&&s("lsrp_appName")&&X.start();if(k.enableCode){var Ia=
+RegionsCode.search(h.region||h.locale.split("_")[1]||"cn");Ia&&(v.add("DefaultRegion",Ia),RegionsCode.addUsual(Ia),b.codeValue.innerHTML=(Ia.N+"").replace(/^00/,"+"))}da(b.userName);da(b.pwd);ka&&ka.length&&("ticket"===k.loginType&&Fa(k.loginType),1===ka.length&&x(b.changeLoginType));if("qr"===h.loginType)qa(!0);else if("all"!==h.loginType){var Bb=!1;0<h.loginType.indexOf("only")&&(Bb=!0,za(!0),z(b.navTabs,"only"));k.loginType=h.loginType.split("only")[0];Fa(k.loginType,Bb)}s("_showQr")&&("false"===
+s("_showQr")?za(!0):"true"===s("_showQr")&&A(b.qrTrigger,!0));y(b.qrTrigger,D.click,qa);y(b.qrClose,D.click,za);y(b.qrTrigger,D.focus,function(){zb.on(Ya.SPACE,qa)});y(b.qrTrigger,D.blur,function(){zb.off(Ya.SPACE,qa)});z(b.body,h.locale);var va="";try{va=c.miui.getDeviceCloudHashId(),v.add("deviceId",va)}catch(Ec){}if(va&&10<va.length){var ua=189216E4;H("deviceId",va,21900,"/",".account.xiaomi.com",ua)}M("ipAddress")||"China"!==h.dataCenterZone||Ub();w(b.outerLink,function(a,b){var c=a.href,d="";
+/\/pass\/(\w+)/.test(c)&&(d=RegExp.$1);a.href=c+location.search;v.add("outerlink"+b,c);y(a,"click",function(){N({biz:"login",type:h.tickType,step:d})})});b.msgPrivacy&&(b.msgPrivacy.href=h.privacyLink);b.copyRight.innerHTML=h.copyRight;b.recordLink=f(".beian-record-link")[0];h.copyRightHide&&x(b.copyRight);if(h.snsDefault){var U=Nb(h.snsDefault);U&&b.snsDefaultCon&&(b.snsDefaultCon.innerHTML=U,y(b.snsDefaultCon,"click",function(){N({biz:"login",type:h.tickType,step:h.snsDefault})}))}else{U="";v.add("snsLoginItem",
+h.snsLoginItem);for(var Q in h.snsLoginItem)var Z=h.snsLoginItem[Q],U=U+('<a class="icon_type btn_'+Z+' sns-login-link" data-type="'+Z+'" href="javascript:void(0)" title="'+cb[Z]+'"><i class="btn_sns_icontype icon_default_'+Z+'"></i></a>');U&&b.snsLogin&&(b.snsLogin.innerHTML=U);w(f(".sns-login-link",b.snsLogin),function(a,b){var c=a.getAttribute("data-type"),d=bb(c);v.add("snsloginlink",c,d);d&&(a.href=d,a.target="_blank");y(a,"click",function(){N({biz:"login",type:h.tickType,step:c})})});b.snsLoginCon&&
+A(b.snsLoginCon,!0)}w(b.langSelect,function(a,b){var c=a.getAttribute("data-lang");c===h.locale?z(a,"current"):(a.href=wc(c),v.add("langInit",c))});v.add("linkInit","done","register,forgetPwd,snsLogin,languageSelect,loginBanner");b.agreeLink.setAttribute("href",JSP_VAR.agreeLink);b.privacyLink.setAttribute("href",JSP_VAR.privacyLink);h.captchaNeed&&h.useManMachine&&(v.add("captchaNeed","pageinitNeed"),ib(),sa(b.captchaImg));b.inputs=ra(b.layout);w(b.inputs,function(a,c){fa.on(a,function(a,c){ea(b[k.currentView])})});
+fa.on(b.userName,function(a,c){k.clientAcq&&(b.userName.value="",x(b.acqTipsMain),X.resetCookie(),k.clientAcq=!1);var d=Ma(a,!0);ea(b.mainForm);l(b.userName.value)?A(b.clearLink,!0):x(b.clearLink);k.enableCode&&"pwd"===k.loginType&&pb(d)});fa.on(b.pwd,function(a,c){ea(b.mainForm);b.pwdVisiable&&(b.pwdVisiable.value=a)});b.pwdVisiable&&fa.on(b.pwdVisiable,function(a,c){ea(b.mainForm);b.pwd.value=a});y(b.toggleVisiable,"click",function(a){a=a||c.event;b.toggleVisiable.__visiable?(b.toggleVisiable.__visiable=
+!1,G(b.pwdEye,"chk"),A(b.pwd),x(b.pwdVisiable),V(b.pwd,"focus")):(b.toggleVisiable.__visiable=!0,z(b.pwdEye,"chk"),x(b.pwd),A(b.pwdVisiable),V(b.pwdVisiable,"focus"));"cancelBubble"in a&&(a.cancelBubble=!0);"stopPropagation"in a&&a.stopPropagation()});b.clearLink&&y(b.clearLink,"click",function(){var a=ra(b.loginMain,!1,"visiablepwd");w(a,function(a,b){a.value=""});"pwd"===k.loginType&&G(b.regionCode,"add_regioncode");x(b.clearLink);V(b.userName,"focus")});y(b.changeLoginType,"click",function(){N({biz:"login",
+type:h.tickType,subBiz:"ticket"===k.loginType?"pwd":"ticket",step:"changeLoginType"});"ticket"!==k.loginType?k.loginType="ticket":k.loginType="pwd";Fa(k.loginType);v.add("loginType",k.loginType)});if(!0===JSP_VAR.showActiveXControl){if("IE"===ja.name||"Firefox"===ja.name)A(b.securityControllerPanel,!0),v.add("activeXControl","true")}else x(b.securityControllerPanel);var Cb=!1;b.securityController&&(b.securityController.checked=Cb?!0:!1);y(b.securityController,D.click,function(){var a=!0;try{new ActiveXObject("XiaomiEdit.XiaomiEditCtrl.1")}catch(c){a=
+!1}a="IE"===ja.name&&a||navigator.plugins["Xiaomi Safe Control for NP"];(Cb=b.securityController.checked)?a?(x(b.pwd),a=e.createElement("div"),z(a,"pwd-object"),"IE"===ja.name?(a.innerHTML='<object id="XiaomiEdit" name="XiaomiEdit" classid="CLSID:E0A362BA-2608-48EA-9D8F-F45258D3091C" width="358" height="50"></object>',b.pwd.parentNode.appendChild(a),e.getElementById("XiaomiEdit")):(a.innerHTML='<object type="application/npXiaomiEditCtl-Plugin" id="npXiaomiEdit" name="XiaomiEdit" width="358" height="48"></object>',
+b.pwd.parentNode.appendChild(a),e.getElementById("npXiaomiEdit")),G(b.pwd.parentNode,"labelbox")):Wa.show():(A(b.pwd),z(b.pwd.parentNode,"labelbox"),f(".pwd-object")[0]&&b.pwd.parentNode.removeChild(f(".pwd-object")[0]),a&&(b.pwd.value=""))});v.add("stoppropagation keyevent",D.keydown+","+D.keyup+","+D.keypress);y(b.pwd,D.keydown,function(a){a=a||c.event;"cancelBubble"in a&&(a.cancelBubble=!0);"stopPropagation"in a&&a.stopPropagation()});y(b.pwd,D.keyup,function(a){a=a||c.event;"cancelBubble"in a&&
+(a.cancelBubble=!0);"stopPropagation"in a&&a.stopPropagation()});y(b.pwd,D.keypress,function(a){a=a||c.event;"cancelBubble"in a&&(a.cancelBubble=!0);"stopPropagation"in a&&a.stopPropagation()});b.pwdVisiable&&(y(b.pwdVisiable,D.keydown,function(a){a=a||c.event;"cancelBubble"in a&&(a.cancelBubble=!0);"stopPropagation"in a&&a.stopPropagation()}),y(b.pwdVisiable,D.keyup,function(a){a=a||c.event;"cancelBubble"in a&&(a.cancelBubble=!0);"stopPropagation"in a&&a.stopPropagation()}),y(b.pwdVisiable,D.keypress,
+function(a){a=a||c.event;"cancelBubble"in a&&(a.cancelBubble=!0);"stopPropagation"in a&&a.stopPropagation()}));v.add("addInputChange","userName");y(b.mainForm,"submit",function(a){N({biz:"login",type:h.tickType,subBiz:k.loginType,step:"submit"});a=a||c.event;a.preventDefault?a.preventDefault():a.returnValue=!1;if(!Na(b.mainForm))return!1;"pwd"===k.loginType&&Y["pwd-login"]?(a=k.showCodeValue?l(b.codeValue.innerHTML)+l(b.userName.value):l(b.userName.value),Y["pwd-login"].start({uid:a})):wb()});var Db=
+parseInt(s("_customDisplay"))||0;ia(Db);"true"===h.snsNone?ia(W.SNSLOGIN+W.SNSDEFAULT):h.snsDefault?(ia(W.SNSLOGIN),"none"!==b.snsDefaultCon.style.display&&z(e.body,"hasSnsDefault"),v.add("customDisplay","snslogin",W.SNSLOGIN)):(v.add("customDisplay","snsdefault",W.DEFAULT),ia(W.SNSDEFAULT));v.add("customDisplay",Db);var Eb=s("lsrp_appName");Eb&&Qb(Eb);Ajax({url:h.infoUrl,data:{_locale:h.locale},success:function(a,c){v.add("siteInfo",a);var d=m(a),d=d[h.locale]||d[JSP_VAR.locale]||[],f=e.createElement("div"),
+k="";w(d,function(a,b){k+='<p class="site_info_txt">'+(a.url?'<a href="'+a.url+'" class="site_info_link" target="_blank">':"")+a.txt+(a.url?"</a>":"")+"</p>"});z(f,"site_info");f.innerHTML=k;b.header.parentNode.appendChild(f)}});y(b.codeSelector,D.click,function(a){if(k.enableCode){k.codeInit||(k.codeInit=!0,Rb());L.clean(b.userName);a=a||c.event;var d=a.target||a.srcElement;if(J(d,"countrycode_selector")||J(d,"countrycode-value")||J(d,"country_code")||J(d,"icon_arrow_down"))k.codeShown?(x(b.codeContainer),
+k.codeShown=!1):(A(b.codeContainer,!0),b.searchCodeInput&&V(b.searchCodeInput,"focus"),k.codeShown=!0);"cancelBubble"in a&&(a.cancelBubble=!0);"stopPropagation"in a&&a.stopPropagation();return!1}});y(b.body,D.click,function(a){ga();"cancelBubble"in a&&(a.cancelBubble=!0);"stopPropagation"in a&&a.stopPropagation()});y(b.codeContainer,D.click,function(a){a=a||c.event;var b=a.target||a.srcElement;J(b,"record")?(ob(b),ga()):J(b,"record-country")||J(b,"record-code")?(ob(b.parentNode),ga()):J(b,"search-code")||
+J(b,"search-code-input")||ga();"cancelBubble"in a&&(a.cancelBubble=!0);"stopPropagation"in a&&a.stopPropagation()});y(b.navTabs,D.click,function(a){a=a||c.event;a=a.target||a.srcElement;J(a,"navtab-link")&&(a=a.getAttribute("data-tab"),Tb(a))});var wa=parseInt(s("_userId"),10)||0,yc=parseInt(M("userId"),10),Fb=C(M("userName")),xa=C(decodeURIComponent(s("_userName")));wa&&(k.verifyPwd=!0,xa||(xa=wa,yc===wa&&Fb&&(xa=Fb)),v.add("verifyPwd",wa,xa),b.userName.value=wa,b.pwd.value="",x(b.changeLoginType),
+x(b.userName.parentNode),A(b.accountInfo,!0),z(b.pwd.parentNode,"accinfo_single_label"),x(b.qrTrigger),b.accountDisplayname.innerHTML=xa,b.header.innerHTML=E.VERIFY_PASSWORD,b.loginButton.value=E.VERIFY_PASSWORD_SUBMIT,b.accountDisplayname.style.fontSize="20px",b.accountDisplayname.style.paddingBottom="20px",x(f("#custom_display_"+W.SNSLOGIN)));y(b.manualCode,D.click,function(a){a=a||c.event;k.showCodeValue&&(k.showCodeValue=!1,k.manualControlCode=!0,G(b.regionCode,"add_regioncode"),z(b.manualCode.parentNode,
+"turn_off"),z(b.regionCode,"divflex"),v.add("manualCode",k.showCodeValue,k.manualControlCode));ga();"cancelBubble"in a&&(a.cancelBubble=!0);"stopPropagation"in a&&a.stopPropagation()});var Ja=!0;if(scopes){var oa=e.createElement("div");oa.innerHTML=h.oauthTpl;b.loginMain.parentNode.appendChild(oa);scopes=q(scopes);b.scopeList=f(".scope_list",oa)[0];b.OAuthBox=oa;b.OAuthWrap=f(".oauth_wrap",oa)[0];b.OAuthWrapText=f(".wrap_more",oa)[0];U=_htmlMore="";for(Q=0;Q<scopes.length;Q++)Q<h.oauthInitNum?U+=
+'<p class="scope_item"><i class="icon_select icon_true disabled"></i>'+scopes[Q].name+"</p>":_htmlMore+='<p class="scope_item"><i class="icon_select icon_true disabled"></i>'+scopes[Q].name+"</p>";b.scopeList.innerHTML=U+'<div class="scope_more scope-more">'+_htmlMore+"</div>";scopes.length>h.oauthInitNum&&A(b.OAuthWrap,!0);y(b.OAuthWrap,"click",function(){Ja=!Ja;b.OAuthWrapText.innerText=Ja?"更多":"收起";Ja?(G(b.OAuthWrap,"up"),x(f(".scope-more")[0])):(z(b.OAuthWrap,"up"),A(f(".scope-more")[0],
+!0))})}if(b.recordLink&&h.beianRecordLink){b.recordLink.href=h.beianRecordLink;var la=new Image,zc=f("span",b.recordLink)[0];la.onload=la.oncomplete=function(){la._loaded=!0;zc.appendChild(la)};setTimeout(function(){!la._loaded&&(la.src=h.default1px_gif)},1E3);la.src=h.beianRecordImg}if(aa){Z=e.createElement("div");Z.id="cookie-usage-notify";Z.className="cookie_usage_notify";Z.innerHTML=h.cookieUsageTpl;F(Z,b.footer);b.cookieUsage=f("#cookie-usage-notify");var Ac=f(".close-cookie-usage",b.cookieUsage)[0],
+Gb=null;c.localStorage?"true"!==localStorage.getItem("COOKIE_USAGE")&&A(b.cookieUsage,!0):A(b.cookieUsage,!0);y(Ac,D.click,function(a){a=a||c.event;clearTimeout(Gb);x(b.cookieUsage);c.localStorage&&localStorage.setItem("COOKIE_USAGE",!0);"cancelBubble"in a&&(a.cancelBubble=!0);"stopPropagation"in a&&a.stopPropagation()});Gb=setTimeout(function(){x(b.cookieUsage)},2E4)}var Y={};if(h.useManMachine){var Bc={China:"cn",Russia:"ru"};try{var Hb=function(a,b){initMiverify({k:"8027422fb0eb42fbac1b521ec4a7961f",
+a:(Bc[JSP_VAR.dataCenterZone]||"en")+"-"+a,locale:JSP_VAR.locale,bindBtn:"",onSuccess:function(a){H("vToken",a.flag,1,"/",".account.xiaomi.com",86400);b()}},function(b){Y[a]=b})};Hb("pwd-login",wb);Hb("ticket-login",Vb)}catch(Cc){throw Error(Cc);}}Ta&&Ta.loaded&&Ta.loaded()})(window,document);
+</script><a target="_blank"></a><div class="modal_container" style="display: none;"><div class="modal_msk"></div><div class="modal_tip mod_acc_tip security-controller-modal" id="modal-id-0" style="display: none;"><div class="modal_tip_flex"><div class="modal_tip_hd modal-header"><div class="external_logo_area"><a class="milogo" href="javascript:void(0)"></a></div><div class="modal-header-text modal_tip_title">提示</div><a href="javascript:void(0)" title="" class="modal-header-close btn_mod_close"><span>关闭</span></a></div><div class="modal_tip_bd modal-body"><div id="sect-controller-panel" class="security_controller_panel"><h4>您需要安装安全控件，才可使用安全登录。</h4><p>控件可对您的密码进行加密保护，提升账户安全性。</p><p>请点击“立即安装控件”按钮，并根据提示进行安装。</p><div class="tip_msg">完成安装后，请重新启动浏览器</div></div><div class="tip_btns"><a title="立即安装控件" href="https://account.xiaomi.com/static/res/0369340/account-static/static/mipay/XiaomiCtrl.exe" class="btn_tip btn_commom btn-action-controller">立即安装控件</a></div></div></div></div></div>
+<div class="miverify_wind" style="display: none;"><div class="miverify_panel_ghost"></div>
+<div class="miverify_panel_box loading">
+<div class="miverify_panel_loading">
+<div class="miverify_panel_loading_icon"></div>
+<span class="miverify_panel_loading_content">环境安全检测中...</span>
+</div>
+<div class="miverify_panel_error">
+<p class="miverify_panel_error_title">提示</p>
+<div class="miverify_panel_error_content"></div>
+<div class="miverify_error_footer_panel" style="display:none;">
+<button class="miverify_cancel_btn">取消</button>
+<button class="miverify_ok_btn miverify_refresh_btn">重试</button>
+</div>
+</div>
+<div class="miverify_panel_next">
+<div class="miverify_wrap">
+<div class="miverify_widget">
+<div class="miverify_window">
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="miverify_wind" style="display: none;"><div class="miverify_panel_ghost"></div>
+<div class="miverify_panel_box loading">
+<div class="miverify_panel_loading">
+<div class="miverify_panel_loading_icon"></div>
+<span class="miverify_panel_loading_content">环境安全检测中...</span>
+</div>
+<div class="miverify_panel_error">
+<p class="miverify_panel_error_title">提示</p>
+<div class="miverify_panel_error_content"></div>
+<div class="miverify_error_footer_panel" style="display:none;">
+<button class="miverify_cancel_btn">取消</button>
+<button class="miverify_ok_btn miverify_refresh_btn">重试</button>
+</div>
+</div>
+<div class="miverify_panel_next">
+<div class="miverify_wrap">
+<div class="miverify_widget">
+<div class="miverify_window">
+</div>
+</div>
+</div>
+</div>
+</div></div></body></html>
